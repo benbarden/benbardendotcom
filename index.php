@@ -78,6 +78,8 @@
             <h2>
                 Photos (via <a href="https://instagram.com/benbarden">Instagram</a>)
             </h2>
+            <div id="instafeed"></div>
+            <!--
             <div style="float: left; margin: 5px; width: 80px;">
                 <a href="https://instagram.com/p/4fAhd9PBZk/?taken-by=benbarden">
                     <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/10296631_408752969335951_291608589_n.jpg" alt="" style="border: 0; width: 75px; height: 75px;">
@@ -108,6 +110,7 @@
                     <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11263531_1403374163321297_725096389_n.jpg" alt="" style="border: 0; width: 75px; height: 75px;">
                 </a>
             </div>
+            -->
         </div>
     </div>
     <!-- /.row -->
@@ -118,6 +121,21 @@
 
 </div>
 <!-- /.container -->
+<?php
+    require 'includes/creds/instagram.php';
+?>
+<script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '44183844',
+        clientId: '<?php print($instagramClientId); ?>',
+        accessToken: '<?php print($instagramAccessToken); ?>',
+        limit: 9,
+        template: '<a href="{{link}}" style="border: 0;"><img src="{{image}}" alt="{{caption}}" title="{{caption}}" style="margin: 5px;" /></a>'
+    });
+    feed.run();
+</script>
 
 <?php
     require 'includes/core/scripts.php';
