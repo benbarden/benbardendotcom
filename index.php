@@ -42,7 +42,7 @@
 
     <!-- Projects Row -->
     <div class="row">
-        <div id="bb-blog-wrapper" class="col-md-6 portfolio-item">
+        <div id="bb-blog-post-wrapper" class="col-md-6 portfolio-item">
             <a href="https://benbarden.wordpress.com">
                 <img class="img-responsive" src="/assets/img/110305-img1946.jpg" alt="Big Ben">
             </a>
@@ -50,12 +50,12 @@
                 <a href="https://benbarden.wordpress.com">Blog</a>
             </h2>
         </div>
-        <div id="bb-instapaper-wrapper" class="col-md-6 portfolio-item">
-            <a href="https://www.instapaper.com/p/benbarden">
+        <div id="bb-blog-link-wrapper" class="col-md-6 portfolio-item">
+            <a href="https://benbarden.wordpress.com">
                 <img class="img-responsive" src="/assets/img/110312-img2050.jpg" alt="Hotel Russell">
             </a>
             <h2>
-                Links (via <a href="https://www.instapaper.com/p/benbarden">Instapaper</a>)
+                Links
             </h2>
         </div>
     </div>
