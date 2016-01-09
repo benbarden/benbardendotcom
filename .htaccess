@@ -37,3 +37,12 @@ Redirect 301 /destinations http://www.benbarden.com/about/destinations.php
 Redirect 301 /my-blogs/ http://www.benbarden.com/
 
 Redirect 301 /on-the-fence-a-new-tagline-and-a-new-look/ https://benbarden.wordpress.com/
+
+## Block referrers
+RewriteCond %{HTTP_REFERER} semalt.com [NC,OR]
+RewriteCond %{HTTP_REFERER} buttons-for-website.com [NC,OR]
+RewriteCond %{HTTP_REFERER} traffic2cash.xyz [NC,OR]
+RewriteCond %{HTTP_REFERER} site-3185140-1.snip.tw [NC,OR]
+RewriteCond %{HTTP_REFERER} share-buttons.xyz [NC,OR]
+RewriteCond %{HTTP_REFERER} seoanalyses.com [NC]
+RewriteRule .* - [F]
