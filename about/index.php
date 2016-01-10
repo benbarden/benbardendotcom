@@ -21,33 +21,37 @@
     <!-- /.row -->
 
     <div class="row">
-        <div class="col-md-6">
-            <h2>Professional Profile:</h2>
+        <div class="col-md-8">
+            <p>I'm a technical leader with broad knowledge of all things tech.
+            I'm currently working for City A.M. as Product and Technology Director.</p>
+            <p>What I do day to day:</p>
             <ul>
-                <li>I currently work for a London newspaper (City AM). I head up the technical team.
-                    My <a href="https://www.linkedin.com/in/benbarden">LinkedIn profile</a> expands on this.</li>
-                <li>I'm a manager with strong technical skills. I have long-term experience in coding, so
-                    I fully appreciate the challenges faced by developers, and work with them to achieve the best possible results.</li>
-                <li>I've worked as a tester and I'm therefore very quality-focused. I report every bug I find.</span></li>
-                <li>I'm a problem solver - I get to the bottom of an issue quickly, and then propose solutions.</li>
-                <li>I'm very organised. I use a mixture of tools (JIRA, Google Docs, Excel, Evernote) when organising
-                    the priorities for my team.</li>
-                <li>Areas of interest: CMS architecture, information architecture, exploratory testing, usability testing,
-                    admin screens/reports, UX, blogging.</li>
+                <li>gathering and documenting requirements from the business, logging tickets and working with the
+                    senior developer to define priorities;</li>
+                <li>developing larger requests into project documentation, working with the designer and senior
+                    developer to produce mockups and specifications;</li>
+                <li>identifying ways to reduce manual effort for staff, by creating new products or streamlining
+                    existing processes;</li>
+                <li>performing QA, reporting issues and approving changes for release;</li>
+                <li>communicating important changes to the wider business;</li>
+                <li>working with service providers for business-as-usual requirements such as web servers, IT service
+                    support, DNS, CDN, and also for integration projects such as analytics, advertising,
+                    and IT projects;</li>
+                <li>managing staff, working with recruiters and hiring new staff;</li>
+                <li>I also provide IT support to the entire company, along with providing adops and email support.</li>
             </ul>
+            <p>My technical skills:</p>
+            <ul>
+                <li>web development</li>
+                <li>MySQL database administration</li>
+                <li>Linux sysadmin</li>
+                <li>IT desktop support</li>
+                <li>QA</li>
+            </ul>
+            <p>To get in touch, <a href="mailto:fromtheblog@benbarden.com">email me</a>.</p>
         </div>
-        <div class="col-md-6">
-            <h2>Personal Profile:</h2>
-            <ul>
-                <li>I'm a blogger, currently running a <a href="https://benbarden.wordpress.com/">mixed topic blog</a>.</li>
-                <li>I'm a composer of instrumental music. See <a title="Music" href="/music/">my music page</a> for more.</li>
-                <li>I'm a keen listener of funk and soul music, and have a long-standing love of trance.</li>
-                <li>I'm a fan of various TV shows, especially sci-fi and comedy. (Red Dwarf is a favourite!)
-                    Here are some of my <a title="TV" href="http://www.benbarden.com/tv/">favourite TV shows</a>.</li>
-                <li>I'm not the most travelled person, but here's a page listing 
-                    <a title="Destinations" href="destinations.php">the places I've been</a>.</li>
-                <li>To get in touch, <a href="mailto:fromtheblog@benbarden.com">email me</a>.</li>
-            </ul>
+        <div class="col-md-2">
+            <img src="/images/2015-09-Ben-Barden-360px.jpg" alt="Ben Barden" style="border: 0;">
         </div>
     </div>
 

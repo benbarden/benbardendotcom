@@ -72,9 +72,6 @@
                 <li>
                     <a href="/about">About</a>
                 </li>
-                <li>
-                    <a href="/tv/doctor-who">Doctor Who</a>
-                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

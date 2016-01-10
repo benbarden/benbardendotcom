@@ -64,7 +64,7 @@
     $(document).ready(function() {
         processFeed('https://benbarden.wordpress.com/feed/?cat=-2200', 'bb-blog-post-wrapper', 5, 'list', 1);
         processFeed('https://benbarden.wordpress.com/feed/?cat=2200', 'bb-blog-link-wrapper', 5, 'list', 2);
-        processFeed('http://feeds.soundcloud.com/users/soundcloud:users:68698534/sounds.rss', 'bb-music-wrapper', 5, 'list', 3);
+        //processFeed('http://feeds.soundcloud.com/users/soundcloud:users:68698534/sounds.rss', 'bb-music-wrapper', 5, 'list', 3);
         //processFeed('https://api.flickr.com/services/feeds/photos_public.gne?id=130558620@N05&format=rss_200', 'bb-flickr-wrapper', 5, 'photo');
         //processFeed('https://www.instapaper.com/starred/rss/4531308/wAW1X2FKMqqES0zhRkeIbslwrGg', 'bb-instapaper-wrapper', 5, 'list');
     });
