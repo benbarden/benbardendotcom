@@ -77,6 +77,7 @@
     <!-- /.row -->
 
 <?php
+    $showSocialIcons = true;
     require 'includes/theme/copyright.php';
 ?>
 

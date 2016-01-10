@@ -30,12 +30,12 @@
 <li>Intranet - October 2014</li>
 <li>Tagging phase 1: Topic pages - December 2014</li>
 -->
+                <li><a href="https://benbarden.wordpress.com/2015/10/17/rebuilding-the-post-editor-at-city-am/">Rebuilding the post editor</a> - September 2015 <em>(links to my blog)</em></li>
                 <li><a title="cityam.com: Homepage/Category redesign, March 2015" href="/portfolio/cityam-homepage-category-redesign-2015-03.php">Homepage/Category page redesign and site layout</a> - changes up to March 2015</li>
 <!--
 <li>Tagging phase 2: Company pages - February 2015</li>
 <li>Adobe Analytics - February 2015</li>
 <li>Migrating from Drupal to Laravel - ongoing</li>
-<li>Bespoke CMS - June 2015</li>
 -->
             </ul>
 <!--

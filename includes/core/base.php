@@ -1,5 +1,6 @@
 <?php
 date_default_timezone_set('Europe/London');
+$showSocialIcons = false;
 
 $includeGtm = false;
 if (isset($_SERVER['HTTP_HOST'])) {
