@@ -92,8 +92,8 @@
         userId: '44183844',
         clientId: '<?php print($instagramClientId); ?>',
         accessToken: '<?php print($instagramAccessToken); ?>',
-        limit: 6,
-        template: '<a href="{{link}}" style="border: 0;"><img src="{{image}}" alt="{{caption}}" title="{{caption}}" style="margin: 5px;" /></a>'
+        limit: 7,
+        template: '<a href="{{link}}" style="border: 0;"><img src="{{image}}" alt="{{caption}}" title="{{caption}}" style="margin: 6px;" /></a>'
     });
     feed.run();
 </script>
