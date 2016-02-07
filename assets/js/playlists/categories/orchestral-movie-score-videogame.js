@@ -1,7 +1,7 @@
 var bbMusicTracklist = [];
 bbMusicTracklist.push({
     title: "Chronicles",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('01. Chronicles.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('01. Chronicles.mp3'),
     duration: "4:24"
 });
 bbMusicTracklist.push({

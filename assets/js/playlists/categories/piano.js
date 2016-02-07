@@ -1,7 +1,7 @@
 var bbMusicTracklist = [];
 bbMusicTracklist.push({
     title: "Aries Part 3 (2015 remix)",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('11. Aries Part 3 (2015 remix).mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('10. Aries Part 3 (2015 remix).mp3'),
     duration: "6:13"
 });
 bbMusicTracklist.push({
@@ -21,7 +21,7 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "Circumference (2015 remix)",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('02. Circumference (2015 remix).mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('02. Circumference (2015 remix).mp3'),
     duration: "4:11"
 });
 bbMusicTracklist.push({
@@ -51,7 +51,7 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "Overture",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('01. Overture.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('01. Overture.mp3'),
     duration: "3:29"
 });
 bbMusicTracklist.push({

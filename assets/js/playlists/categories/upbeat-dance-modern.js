@@ -1,7 +1,7 @@
 var bbMusicTracklist = [];
 bbMusicTracklist.push({
     title: "Classic Case of Chaos",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('04. Classic Case of Chaos.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('04. Classic Case of Chaos.mp3'),
     duration: "4:24"
 });
 bbMusicTracklist.push({
@@ -11,22 +11,22 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "Dry Ice",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('08. Dry Ice.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('08. Dry Ice.mp3'),
     duration: "3:42"
 });
 bbMusicTracklist.push({
     title: "Epic Journey",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('12. Epic Journey.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('11. Epic Journey.mp3'),
     duration: "6:10"
 });
 bbMusicTracklist.push({
     title: "Fireflies",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('07. Fireflies.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('07. Fireflies.mp3'),
     duration: "4:52"
 });
 bbMusicTracklist.push({
     title: "First Tide",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('05. First Tide.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('05. First Tide.mp3'),
     duration: "4:21"
 });
 bbMusicTracklist.push({
@@ -36,17 +36,17 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "Late Summer Funk",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('04. Late Summer Funk.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('04. Late Summer Funk.mp3'),
     duration: "5:52"
 });
 bbMusicTracklist.push({
     title: "Low Gravity (2015 remix)",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('02. Low Gravity (2015 remix).mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('02. Low Gravity (2015 remix).mp3'),
     duration: "3:59"
 });
 bbMusicTracklist.push({
     title: "Measure an infinite distance (2015 remix)",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('06. Measure an infinite distance (2015 remix).mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('06. Measure an infinite distance (2015 remix).mp3'),
     duration: "4:03"
 });
 bbMusicTracklist.push({
@@ -61,7 +61,7 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "Second Tide",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('05. Second Tide.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('05. Second Tide.mp3'),
     duration: "2:48"
 });
 bbMusicTracklist.push({
@@ -81,22 +81,22 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "Subterranean Labyrinth (2015 remix)",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('06. Subterranean Labyrinth (2015 remix).mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('06. Subterranean Labyrinth (2015 remix).mp3'),
     duration: "3:31"
 });
 bbMusicTracklist.push({
-    title: "Take Me Downstairs",
-    mp3: "http://coda.city/downloads/ben-barden-music/the-unravelling-of-travelling/" + encodeURI('09 Take Me Downstairs.mp3'),
-    duration: "3:24"
+    title: "Take Me Downstairs (2016 remix)",
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('10. Take Me Downstairs (2016 remix).mp3'),
+    duration: "3:25"
 });
 bbMusicTracklist.push({
     title: "The Dark Room",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('08. The Dark Room.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('08. The Dark Room.mp3'),
     duration: "7:27"
 });
 bbMusicTracklist.push({
     title: "Turn It Up",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('07. Turn It Up.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('07. Turn It Up.mp3'),
     duration: "4:53"
 });
 bbMusicTracklist.push({

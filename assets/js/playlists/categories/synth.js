@@ -1,7 +1,7 @@
 var bbMusicTracklist = [];
 bbMusicTracklist.push({
     title: "Crystallized",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-1/" + encodeURI('10. Crystallized.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('09. Crystallized.mp3'),
     duration: "3:58"
 });
 bbMusicTracklist.push({

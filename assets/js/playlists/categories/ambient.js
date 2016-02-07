@@ -41,7 +41,7 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "See you on the other side",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('12. See you on the other side.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('11. See you on the other side.mp3'),
     duration: "5:10"
 });
 bbMusicTracklist.push({
@@ -56,7 +56,7 @@ bbMusicTracklist.push({
 });
 bbMusicTracklist.push({
     title: "True Destiny",
-    mp3: "http://coda.city/downloads/ben-barden-music/parallel-paths-2/" + encodeURI('10. True Destiny.mp3'),
+    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('09. True Destiny.mp3'),
     duration: "5:56"
 });
 bbMusicTracklist.push({
