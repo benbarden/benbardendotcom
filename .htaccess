@@ -25,8 +25,9 @@ Redirect 301 /view.php/article/1049/a-beginners-guide-to-google-analytics-part-2
 Redirect 301 /view.php/article/1057/a-beginners-guide-to-google-analytics-part-3-comparing-statistics http://www.benbarden.com/ebooks
 Redirect 301 /view.php/article/1064/a-beginners-guide-to-google-analytics-part-4-traffic-sources-and-content http://www.benbarden.com/ebooks
 
-Redirect 301 /music/creations/parallel-paths/ http://www.benbarden.com/music/parallel-paths/
-Redirect 301 /music/creations/album-6/ http://www.benbarden.com/music/parallel-paths/
+Redirect 301 /music/creations/parallel-paths/ http://www.benbarden.com/music/symmetry/
+Redirect 301 /music/creations/album-6/ http://www.benbarden.com/music/symmetry/
+Redirect 301 /music/parallel-paths/ http://www.benbarden.com/music/symmetry/
 Redirect 301 /music/creations/ http://www.benbarden.com/music/
 Redirect 301 /music/spotify-playlists/ http://www.benbarden.com/music/
 Redirect 301 /music/favourite-artists/ http://www.benbarden.com/music/

@@ -40,11 +40,6 @@ bbMusicTracklist.push({
     duration: "4:14"
 });
 bbMusicTracklist.push({
-    title: "See you on the other side",
-    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('11. See you on the other side.mp3'),
-    duration: "5:10"
-});
-bbMusicTracklist.push({
     title: "State of Indifference",
     mp3: "http://coda.city/downloads/ben-barden-music/the-unravelling-of-travelling/" + encodeURI('18 State of Indifference.mp3'),
     duration: "2:28"
@@ -53,11 +48,6 @@ bbMusicTracklist.push({
     title: "Sunwatching",
     mp3: "http://coda.city/downloads/ben-barden-music/a-change-of-scenery/" + encodeURI('04 Sunwatching.mp3'),
     duration: "1:08"
-});
-bbMusicTracklist.push({
-    title: "True Destiny",
-    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('09. True Destiny.mp3'),
-    duration: "5:56"
 });
 bbMusicTracklist.push({
     title: "Twilight Tide",

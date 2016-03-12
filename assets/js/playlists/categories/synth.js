@@ -1,10 +1,5 @@
 var bbMusicTracklist = [];
 bbMusicTracklist.push({
-    title: "Crystallized",
-    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('09. Crystallized.mp3'),
-    duration: "3:58"
-});
-bbMusicTracklist.push({
     title: "Gravity",
     mp3: "http://coda.city/downloads/ben-barden-music/besidewalk-plight/" + encodeURI('01 Gravity.mp3'),
     duration: "3:04"

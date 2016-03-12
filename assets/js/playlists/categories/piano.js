@@ -1,10 +1,5 @@
 var bbMusicTracklist = [];
 bbMusicTracklist.push({
-    title: "Aries Part 3 (2015 remix)",
-    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('10. Aries Part 3 (2015 remix).mp3'),
-    duration: "6:13"
-});
-bbMusicTracklist.push({
     title: "Besidewalk Plight",
     mp3: "http://coda.city/downloads/ben-barden-music/besidewalk-plight/" + encodeURI('04 Besidewalk Plight.mp3'),
     duration: "3:02"
@@ -18,11 +13,6 @@ bbMusicTracklist.push({
     title: "Blanket of Snow",
     mp3: "http://coda.city/downloads/ben-barden-music/a-change-of-scenery/" + encodeURI('02 Blanket of Snow.mp3'),
     duration: "2:31"
-});
-bbMusicTracklist.push({
-    title: "Circumference (2015 remix)",
-    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('02. Circumference (2015 remix).mp3'),
-    duration: "4:11"
 });
 bbMusicTracklist.push({
     title: "December Loneliness",
@@ -48,11 +38,6 @@ bbMusicTracklist.push({
     title: "Moonsurfing",
     mp3: "http://coda.city/downloads/ben-barden-music/a-change-of-scenery/" + encodeURI('07 Moonsurfing.mp3'),
     duration: "2:23"
-});
-bbMusicTracklist.push({
-    title: "Overture",
-    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-1/" + encodeURI('01. Overture.mp3'),
-    duration: "3:29"
 });
 bbMusicTracklist.push({
     title: "Prosperity",

@@ -22,7 +22,7 @@
 
     <div class="row">
         <div class="col-md-6">
-
+            <p><strong>For brand new music, visit <a href="http://www.gfdmusic.com" target="_blank">gfdmusic.com</a>.</strong></p>
             <h2>Tracks index</h2>
             <p>This is an index of most of my music.
                 The categories are designed to group similar(ish) tracks together.

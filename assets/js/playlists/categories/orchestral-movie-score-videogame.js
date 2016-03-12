@@ -1,10 +1,5 @@
 var bbMusicTracklist = [];
 bbMusicTracklist.push({
-    title: "Chronicles",
-    mp3: "http://coda.city/downloads/ben-barden-music/symmetry-2/" + encodeURI('01. Chronicles.mp3'),
-    duration: "4:24"
-});
-bbMusicTracklist.push({
     title: "Deafening Silence",
     mp3: "http://coda.city/downloads/ben-barden-music/the-unravelling-of-travelling/" + encodeURI('19 Deafening Silence.mp3'),
     duration: "2:43"

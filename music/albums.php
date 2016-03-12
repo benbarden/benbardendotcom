@@ -78,13 +78,6 @@
                     <td>14 (+6)</td>
                     <td>71 minutes</td>
                 </tr>
-                <tr>
-                    <td>6</td>
-                    <td><a href="/music/parallel-paths/">Parallel Paths</a></td>
-                    <td><small>TBA</small></td>
-                    <td>24</td>
-                    <td><small>TBA</small></td>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -121,13 +114,6 @@
                 <div class="col-md-4">
                     <a href="/music/a-change-of-scenery/">
                         <img src="/images/music/albums/a-change-of-scenery-250px.jpg" alt="A Change of Scenery" style="border: 0; height: 150px; width: 150px;">
-                    </a>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 10px;">
-                <div class="col-md-4">
-                    <a href="/music/parallel-paths/">
-                        <img src="/images/music/albums/blank-album.jpg" alt="Parallel Paths" style="border: 0; height: 150px; width: 150px;">
                     </a>
                 </div>
             </div>
