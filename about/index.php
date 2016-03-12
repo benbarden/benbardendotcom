@@ -22,6 +22,25 @@
 
     <div class="row">
         <div class="col-md-8">
+            <p>I've worked in tech since 1998 and have had a variety of roles, including software developer, web developer,
+            QA manager, tech team lead, IT support, project manager, and most recently product director.</p>
+            <p>My strengths include:</p>
+            <ul>
+                <li>directing teams - I have interviewed and hired tech staff, worked with them to find solutions to
+                    product requirements, and managed a large number of project launches, enhancements, maintenance work
+                    and optimisation;</li>
+                <li>user experience - I feel strongly that excellent UX is critical to a successful product. I'm always
+                    looking for ways to reduce friction, streamline processes, and help people to do their jobs faster
+                    and better;</li>
+                <li>organisation - I enjoy making order from chaos, and have proposed and implemented numerous process
+                    improvements at every company I've worked. I'm also good at running technical projects;</li>
+                <li>attention to detail - I look at the big picture as well as focusing on smaller details. When time
+                    and/or budget is tight, small changes can still make the biggest difference - while also minimising
+                    risk;</li>
+                <li>clear and coherent written and verbal communication at all levels of an organisation - technical and
+                    non-technical staff, managers and directors.</li>
+            </ul>
+            <!--
             <p>I'm a technical leader with broad knowledge of all things tech.
             I'm currently working for City A.M. as Product and Technology Director.</p>
             <p>What I do day to day:</p>
@@ -48,6 +67,7 @@
                 <li>IT desktop support</li>
                 <li>QA</li>
             </ul>
+            -->
             <p>To get in touch, <a href="mailto:fromtheblog@benbarden.com">email me</a>.</p>
         </div>
         <div class="col-md-2">
