@@ -44,12 +44,10 @@
                     <div id="bb-blog-post-wrapper">
 
                     </div>
+                    <p style="margin-top: 15px;"><a href="https://benbarden.wordpress.com">More blog posts &gt;</a></p>
                 </div>
                 <div class="col-md-6">
-                    <h2>Links</h2>
-                    <div id="bb-blog-link-wrapper">
-
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -101,6 +99,15 @@
 
 <?php
     require 'includes/core/scripts.php';
-    require 'includes/tools/homepage-feeds.php';
+?>
+<script type="text/javascript" src="/assets/js/site/homepage-feeds.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        processFeed('https://benbarden.wordpress.com/feed/', 'bb-blog-post-wrapper', 5, 'list', 1);
+        //processFeed('https://benbarden.wordpress.com/feed/?cat=-2200', 'bb-blog-post-wrapper', 5, 'list', 1);
+        //processFeed('https://benbarden.wordpress.com/feed/?cat=2200', 'bb-blog-link-wrapper', 5, 'list', 2);
+    });
+</script>
+<?php
     require 'includes/core/footer.php';
 ?>
