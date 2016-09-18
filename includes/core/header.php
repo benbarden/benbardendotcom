@@ -61,6 +61,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
+                    <a href="https://benbarden.wordpress.com/" target="_blank">Blog</a>
+                </li>
+                <li>
                     <a href="/music">Music</a>
                 </li>
                 <li>

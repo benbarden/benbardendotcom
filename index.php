@@ -47,7 +47,7 @@
                     <p style="margin-top: 15px;"><a href="https://benbarden.wordpress.com">More blog posts &gt;</a></p>
                 </div>
                 <div class="col-md-6">
-                    
+
                 </div>
             </div>
         </div>
