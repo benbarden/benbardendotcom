@@ -1,0 +1,58 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "Sailing Under Clouds" is a remix of "Precipitate" from <em>The Unravelling of Travelling</em>.
+                </p>
+                <p>
+                    Although this track first appeared on <em>The Unravelling of Travelling</em>, it was originally
+                    intended to appear on <em>Besidewalk Plight</em> – hence its inclusion at this point in the
+                    <em>Revisited</em> project.
+                </p>
+                <p>
+                    I wrote it under the title of “Ocean Waves” but renamed it “Precipitate” (derived from the
+                    word “precipitation”). To me, it evokes visions of sailing on the ocean but with a melancholy edge,
+                    hence the “clouds” part of the new title. It makes me think of the Zelda game, <em>The Wind Waker</em>.
+                </p>
+                <h2>Revisited Remix</h2>
+                <p>
+                    Aside from the different instruments, not much has changed here. It’s a little fresher,
+                    but the original is still good.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

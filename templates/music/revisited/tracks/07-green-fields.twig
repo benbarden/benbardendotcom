@@ -1,0 +1,69 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    This is a remix of “As Long As It Takes” from <em>A World Beyond</em>. “Green Fields” is also
+                    the title of the remix of the same track as it appeared on <em>Hidden in the Beyond</em>.
+                </p>
+                <p>
+                    Original track description:
+                </p>
+                <blockquote>
+                    A young couple getting married; the start of many years of happiness. They fought just the night
+                    before and are having second thoughts, but a wise man tells them that they should push past it
+                    and move on. They’ll get there in time – it’ll take as long as it takes.
+                </blockquote>
+                <p>
+                    This description ties into the title of the original (“As Long As It Takes”). However, the
+                    remixed title “Green Fields” actually comes from the description for “The Sword”:
+                </p>
+                <blockquote>
+                    Green fields and dark clouds. A knight in shining armour holding his sword. He’s the
+                    last one standing. Victorious, but alone.
+                </blockquote>
+                <p>
+                    I wrote the original melody in 2000-2001. I wrote lyrics too, but as I’m not a great singer,
+                    the track has remained instrumental.
+                </p>
+                <h2>Remix</h2>
+                <p>
+                    This version is similar to the <em>Hidden</em> remix, but with better sounds. Both remixes are a
+                    bit longer than the original from <em>A World Beyond</em>.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

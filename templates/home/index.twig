@@ -1,0 +1,95 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Header -->
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="page-header">Ben Barden</h1>
+        </div>
+        <div class="col-md-4" style="margin: 40px 0 0 0;">
+            Follow:
+            <a href="https://benbarden.wordpress.com" target="_blank">
+                <img src="/assets/img/social/wordpress.png" alt="Blog" title="Blog" style="width: 36px; height: 36px; border: 0;"></a>
+            <a href="https://twitter.com/benbarden" target="_blank">
+                <img src="/assets/img/social/twitter.png" alt="Twitter" title="Twitter" style="width: 36px; height: 36px; border: 0;"></a>
+            <a href="https://www.linkedin.com/in/benbarden" target="_blank">
+                <img src="/assets/img/social/linkedin.png" alt="LinkedIn" title="LinkedIn" style="width: 36px; height: 36px; border: 0;"></a>
+            <a href="https://soundcloud.com/benbarden" target="_blank">
+                <img src="/assets/img/social/soundcloud.png" alt="Soundcloud" title="Soundcloud" style="width: 36px; height: 36px; border: 0;"></a>
+            <a href="https://instagram.com/benbarden/" target="_blank">
+                <img src="/assets/img/social/instagram.png" alt="Instagram" title="Instagram" style="width: 36px; height: 36px; border: 0;"></a>
+            <a href="mailto:fromtheblog@benbarden.com" target="_blank">
+                <img src="/assets/img/social/telegram.png" alt="Email" title="Email" style="width: 36px; height: 36px; border: 0;"></a>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Projects Row -->
+    <div class="row">
+        <div class="col-md-4 portfolio-item">
+            <a href="music/">
+                <img src="/assets/img/homepage/album-covers.png" alt="Ben Barden - album covers">
+            </a>
+            <h2>Music</h2>
+            <ul>
+                <li><a href="/music/revisited/">Revisited</a> - <em>compilation</em></li>
+                <li><a href="/music/symmetry-1/">Symmetry 1</a></li>
+                <li><a href="/music/symmetry-2/">Symmetry 2</a></li>
+                <li><a href="/music/">more albums</a>...</li>
+            </ul>
+        </div>
+        <div class="col-md-4 portfolio-item">
+            <a href="https://benbarden.wordpress.com">
+                <img class="img-responsive" src="/assets/img/homepage/IMG_0290-360px.jpg" alt="Steps">
+            </a>
+            <h2>Blog posts</h2>
+            <div id="bb-blog-post-wrapper">
+
+            </div>
+            <p style="margin-top: 15px;"><a href="https://benbarden.wordpress.com">More blog posts &gt;</a></p>
+        </div>
+        <div class="col-md-4 portfolio-item">
+            <a href="about/">
+                <img src="/images/2015-09-Ben-Barden-360px.jpg" alt="Ben Barden" style="border: 0;">
+            </a>
+            <h2>About</h2>
+            <p>I'm a technical leader with broad knowledge of all things tech.
+                I'm currently working for City A.M. as Product and Technology Director.
+                <a href="about/">Read more</a>.</p>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    {#
+    <!-- Projects Row -->
+    <div class="row">
+        <div id="bb-photo-wrapper" class="col-md-12 portfolio-item">
+            <h2>
+                Photos (via <a href="https://instagram.com/benbarden">Instagram</a>)
+            </h2>
+            <div id="instafeed"></div>
+        </div>
+    </div>
+    <!-- /.row -->
+    #}
+
+    {% include 'theme/copyright.twig' with {'ShowSocialIcons': 'Y'} %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% include 'home/instafeed.twig' %}
+<script type="text/javascript" src="/assets/js/site/homepage-feeds.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        processFeed('https://benbarden.wordpress.com/feed/', 'bb-blog-post-wrapper', 5, 'list', 1);
+        //processFeed('https://benbarden.wordpress.com/feed/?cat=-2200', 'bb-blog-post-wrapper', 5, 'list', 1);
+        //processFeed('https://benbarden.wordpress.com/feed/?cat=2200', 'bb-blog-link-wrapper', 5, 'list', 2);
+    });
+</script>
+{% endblock footer_scripts %}

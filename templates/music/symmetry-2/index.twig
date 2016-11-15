@@ -1,0 +1,61 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li class="active">Symmetry 1</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Symmetry 1</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    <em>Symmetry 2</em> is my seventh album, released under the name "GFD".
+                    Many of the tracks have a companion with the equivalent track number on the sister album, <em>Symmetry 1</em>.
+                </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th style="text-align: center;">Duration</th>
+                        <th colspan="3" style="text-align: center;">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bb-category-tracklist">
+                    <tr>
+                        <td colspan="5"><em>loading table...</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+{% include 'theme/licensing.twig' %}
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/symmetry-2-cover-250px.png" alt="Ben Barden - Symmetry 2">
+                {% include 'theme/player/render.twig' %}
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+    <script src="/assets/js/albums/symmetry-2.js?v=2"></script>
+    {% include 'theme/player/base.twig' %}
+{% endblock footer_scripts %}

@@ -1,0 +1,75 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "Eternal Evolution" is excerpted from "Nine Intertwined" on <em>Hidden in the Beyond</em>,
+                    specifically the opening and closing section.
+                </p>
+                <p>
+                    “Nine Intertwined” was something of a tour de force. Joining tracks into longer tracks was
+                    something I did a lot of on <em>A World Beyond</em>. For <em>Hidden in the Beyond</em>, I decided
+                    to merge the three “Aries” tracks (parts 1 and 2, part 3, and parts 4 and 5) with some new material.
+                    The track became the 18+ minute epic, “Nine Intertwined”.
+                </p>
+                <p>
+                    Although I was happy with the outcome, sometimes I felt that the track made you wait around for
+                    15+ minutes for a resolution to the great opening theme. Incidentally, the title
+                    “Eternal Evolution” is the original name of the section within “Nine Intertwined”.
+                </p>
+                <p>
+                    Splitting this track from the larger body of work and placing it on its own was something I
+                    hadn’t tried before the <em>Revisited</em> project. Whereas I’d previously invested time on
+                    merging shorter tracks into longer tracks, in this case I decided to do the opposite.
+                </p>
+                <h2>Remix</h2>
+                <p>
+                    The intro is fairly similar aside from the addition of a simple woodblock percussion line.
+                    This is a little irregular, as it was hard to find a suitable drum pattern for the 3/4 time signature.
+                </p>
+                <p>
+                    Drums do accompany the remainder of the track, as the original sounded good but felt a little empty.
+                </p>
+                <p>
+                    The instruments aren’t hugely different to the original, except it’s a little more electronic
+                    this time around.
+                </p>
+                <p>
+                    I’ve also extended what was originally a fairly short track by adding a little more repetition.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

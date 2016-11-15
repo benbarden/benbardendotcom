@@ -1,0 +1,77 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "Somewhere There" is track 8 from my first album, <em>A World Beyond</em>.
+                </p>
+                <p>
+                    Original track description:
+                </p>
+                <blockquote>
+                    A usually busy town with colourful Christmas lights. However, there’s nobody around except me.
+                    What could be a happy occasion quickly becomes obscured by the loneliness.
+                </blockquote>
+                <p>
+                    I first wrote a basic chord sequence for “Somewhere There” in 1999, along with some lyrics that
+                    didn’t make a whole lot of sense (which is where the title comes from). Having played the chords
+                    through a few times, I realised that they had potential, so scribbled “WORK ON” at the top of the page.
+                </p>
+                <p>
+                    The piece resurfaced a year or two later, when I used the chords to create a melody.
+                    The core of the track was there, but it was missing an ending. This was added later.
+                </p>
+                <p>
+                    There are some strong melodies in the track – in my view, some of the strongest on <em>A World Beyond</em>.
+                    It was always supposed to be a melancholy piece, which is partly how I came up with the track description.
+                </p>
+                <p>
+                    When I shared the original version of this track online, I remember someone saying it made them
+                    think of Hogwarts. That wasn’t my intention at all, but it was hardly surprising due to the
+                    sounds I used.
+                </p>
+                <h2>Remix</h2>
+                <p>
+                    This is one track where I consider the <em>Hidden in the Beyond</em> remix (“December Loneliness”)
+                    to be a lot better than the original.
+                </p>
+                <p>
+                    For the <em>Revisited</em> remix, I’ve taken the “December Loneliness” version, changed the
+                    instruments and added some drums.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

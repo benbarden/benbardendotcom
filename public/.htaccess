@@ -1,0 +1,50 @@
+
+# Old blog redirects
+#Redirect 301 /blog/thinking/what-is-it-about-blogging-that-you-enjoy-the-most/ https://benbarden.wordpress.com/2015/07/07/blogging-101-write-about-what-you-love/
+
+RewriteEngine on
+
+# Force www
+RewriteCond %{HTTP_HOST} ^benbarden.com [NC]
+RewriteRule ^(.*)$ http://www.benbarden.com/$1 [L,R=301,NC]
+
+# Blog / Feed redirects
+RedirectMatch 301 /blog(.*) https://benbarden.wordpress.com$1
+RedirectMatch 301 /feed/ https://benbarden.wordpress.com/feed
+
+# Can't get this to work!!
+Redirect 301 /​feeds.php?name=articles https://benbarden.wordpress.com/feed
+
+# Single redirects
+Redirect 301 /2015/04/updating-the-layout-of-cityam-com-the-what-and-why/ http://www.benbarden.com/portfolio/cityam-homepage-category-redesign-2015-03.php
+
+Redirect 301 /2014/05/setting-up-twig-in-laravel/ https://benbarden.wordpress.com/2015/07/05/setting-up-twig-in-laravel/
+
+Redirect 301 /view.php/article/1048/a-beginners-guide-to-google-analytics-part-1 http://www.benbarden.com/ebooks
+Redirect 301 /view.php/article/1049/a-beginners-guide-to-google-analytics-part-2 http://www.benbarden.com/ebooks
+Redirect 301 /view.php/article/1057/a-beginners-guide-to-google-analytics-part-3-comparing-statistics http://www.benbarden.com/ebooks
+Redirect 301 /view.php/article/1064/a-beginners-guide-to-google-analytics-part-4-traffic-sources-and-content http://www.benbarden.com/ebooks
+
+Redirect 301 /music/creations/parallel-paths/ http://www.benbarden.com/music/symmetry/
+Redirect 301 /music/creations/album-6/ http://www.benbarden.com/music/symmetry/
+Redirect 301 /music/parallel-paths/ http://www.benbarden.com/music/symmetry/
+Redirect 301 /music/creations/ http://www.benbarden.com/music/
+Redirect 301 /music/spotify-playlists/ http://www.benbarden.com/music/
+Redirect 301 /music/favourite-artists/ http://www.benbarden.com/music/
+Redirect 301 /view.php/area/52/twice-midnight http://www.benbarden.com/music/twice-midnight/
+Redirect 301 /music/albums/hidden-in-the-beyond/ http://www.benbarden.com/music/hidden-in-the-beyond/
+Redirect 301 /music/albums.php http://www.benbarden.com/music/
+
+Redirect 301 /destinations http://www.benbarden.com/about/destinations.php
+Redirect 301 /my-blogs/ http://www.benbarden.com/
+
+Redirect 301 /on-the-fence-a-new-tagline-and-a-new-look/ https://benbarden.wordpress.com/
+
+## Block referrers
+RewriteCond %{HTTP_REFERER} semalt.com [NC,OR]
+RewriteCond %{HTTP_REFERER} buttons-for-website.com [NC,OR]
+RewriteCond %{HTTP_REFERER} traffic2cash.xyz [NC,OR]
+RewriteCond %{HTTP_REFERER} site-3185140-1.snip.tw [NC,OR]
+RewriteCond %{HTTP_REFERER} share-buttons.xyz [NC,OR]
+RewriteCond %{HTTP_REFERER} seoanalyses.com [NC]
+RewriteRule .* - [F]

@@ -1,0 +1,94 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Revisiting Besidewalk Plight</h2>
+                <p>
+                    In the original sleeve notes for <em>Besidewalk Plight</em>, each story had a description
+                    that formed part of a larger story. In the music, there’s a strong progression from the first
+                    track (“Gravity”) to track 10 (“Twisted Vision”). At that point, the progression ends,
+                    and the final five tracks go in a slightly different direction. This is reflected in the story,
+                    too: track 11 returns to the beach that featured earlier in the dialogue. The story doesn’t repeat,
+                    but it’s almost like it starts over.
+                </p>
+                <p>
+                    For the remixes, I’ve dropped a few tracks, retitled most of them, and reordered the remaining
+                    tracks into a slightly more coherent order that most closely mirrors the story for the final five
+                    tracks – at least in terms of the titles. As before, all tracks have been remixed, some more
+                    than others.
+                </p>
+                <h2>About “The Island”</h2>
+                <p>
+                    “The Island” is a remix of “The Last Ones – Phase 1”. Its name comes from part of the
+                    <em>Besidewalk Plight</em> sleeve notes:
+                </p>
+                <blockquote>
+                    <strong>The Turning Tide</strong>
+                    <br>
+                    There’s water at my feet, and a boat in front of me. I get into the boat, and I’m taken to an island.
+                </blockquote>
+                <p>
+                    This track was then followed by “The Wilderness”. Here’s the description for “The Last Ones – Phase 1”:
+                </p>
+                <blockquote>
+                    <strong>The Last Ones – Phase 1</strong>
+                    <br>
+                    The rain pours down as I make my way through the forest. Eventually, I find a clearing.
+                    I’ve found a forgotten tribe – the last ones standing on this island.
+                </blockquote>
+                <p>
+                    The track is split into two parts:
+                </p>
+                <p>
+                    0:00 Nebular Mass
+                    <br>
+                    1:43 The Last Ones
+                </p>
+                <h2>Revisited Remix</h2>
+                <p>
+                    Instead of the rather elongated three-part (or three “phase”) coda to the album,
+                    most of the material for “The Last Ones” hasn’t made it onto this collection of remixes.
+                    Phase 1 was always my favourite, so this time around, I’ve used it to start the album instead of it
+                    being buried at the end.
+                </p>
+                <p>
+                    The new version is more piano-led, and a little quicker. I’ve taken out the flutes,
+                    which were rather overused, especially in the second part. This means you can actually hear
+                    the melodies in “The Last Ones” (from 1:43) and it isn’t boring like the original.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

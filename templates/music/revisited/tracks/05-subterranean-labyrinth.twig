@@ -1,0 +1,76 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "Subterranean Labyrinth" is track 10 from <em>A World Beyond</em>.
+                </p>
+                <p>
+                    Original track description:
+                </p>
+                <blockquote>
+                    A homage to the dungeons in various Zelda games. You never know what’s around the next corner
+                    until it’s too late. Lots of suspense.
+                </blockquote>
+                <p>
+                    As stated above, the piece was inspired by the underground dungeons in “Zelda” on the NES and the SNES.
+                </p>
+                <p>
+                    The opening bars were going round and round my head one day back in 1995. So much so,
+                    I had to write them down. It wasn’t until 2003 that I actually wrote the main section of the piece,
+                    which was initially called “All Sides Blocked”. Although the main melody from that piece remains,
+                    the rest is very different.
+                </p>
+                <p>
+                    In my view this is the best track on <em>A World Beyond</em>.
+                </p>
+                <h2>Remix</h2>
+                <p>
+                    There have now been a few versions of this track:
+                </p>
+                <ol>
+                    <li>the original, from <em>A World Beyond</em>;</li>
+                    <li>“Underground Maze”, from <em>Hidden in the Beyond</em>;</li>
+                    <li>the GFD remix from <em>Symmetry 2</em>;</li>
+                    <li>the <em>Revisited</em> remix.</li>
+                </ol>
+                <p>
+                    This version is a slight variation of the GFD remix I produced for <em>Symmetry 2</em>, with a few
+                    additions and tweaks.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

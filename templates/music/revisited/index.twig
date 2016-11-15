@@ -1,0 +1,64 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li class="active">Revisited</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Revisited</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    <em>Revisited</em> is my eighth album. It's a compilation of tracks from my first five albums
+                    (up to <em>A Change of Scenery</em>), remixed with new instruments and melodies.
+                </p>
+                <p>
+                    All tracks listed below are available as a new <em>Revisited Remix</em>.
+                </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th style="text-align: center;">Duration</th>
+                        <th colspan="3" style="text-align: center;">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bb-category-tracklist">
+                    <tr>
+                        <td colspan="5"><em>loading table...</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+{% include 'theme/licensing.twig' %}
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+                {% include 'theme/player/render.twig' %}
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+    <script src="/assets/js/albums/revisited.js?v=12"></script>
+    {% include 'theme/player/base.twig' %}
+{% endblock footer_scripts %}

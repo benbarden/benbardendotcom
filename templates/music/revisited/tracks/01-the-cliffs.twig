@@ -1,0 +1,60 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    “The Cliffs” is the opening track from my first album, <em>A World Beyond</em>. Although I remixed it
+                    for <em>Hidden in the Beyond</em> under the name “Dancing on the Cliffs”, I prefer the original.
+                </p>
+                <p>
+                    Here’s my description of the track, taken from the original album sleeve notes:
+                </p>
+                <blockquote>
+                    I’m standing at the top of the cliffs. There’s a beautiful sunset and striking clouds,
+                    but when I look down, my stomach does somersaults. Two different emotions at once.
+                </blockquote>
+                <p>
+                    While it wasn’t the first track I ever wrote, and it also wasn’t the first track I completed for
+                    <em>A World Beyond</em>, I considered it to be a strong album opener. As with most of my early music,
+                    the original was sparse and lacked depth – but the melodies were good.
+                </p>
+                <p>
+                    “The Cliffs” was written as one track. It did not have any other tracks stuck onto it to make a
+                    longer track – which was something I did quite a bit of on this album.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

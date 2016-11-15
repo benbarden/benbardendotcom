@@ -1,0 +1,82 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    “Journey to Atlantis” is a remix of “Ocean Dive” from <em>A World Beyond</em>.
+                </p>
+                <p>
+                    Here’s the track description from the original album sleeve notes:
+                </p>
+                <blockquote>
+                    At first, the ocean is calm and peaceful. Then it gets briefly dark and dangerous. Much of the piece
+                    moves back and forth between calm and ominous moods. Later, it accelerates and leads into a new tune,
+                    before revisiting the original theme and finally, the “outro”.
+                </blockquote>
+                <p>
+                    At the time, this was the first track on <em>A World Beyond</em> to include drums. While “The Cliffs”
+                    did not have drums, the later remixes – including the Revisited remix – did have drums.
+                </p>
+                <h2>Structure</h2>
+                <p>
+                    The track is constructed of several shorter tracks, a pattern I followed for several of my earliest
+                    tracks. The sections are:
+                </p>
+                <p>
+                    0:00 On and On
+                    <br>
+                    1:31 (Main theme)
+                    <br>
+                    2:48 Survival Beings
+                    <br>
+                    5:04 Forever Valley
+                </p>
+                <h2>Remix</h2>
+                <p>
+                    For this remix, I changed the title at the very last minute. While the earlier part of the track fits
+                    the “Ocean Dive” title, the final section (Forever Valley) gives the piece something of a destination.
+                    Putting Atlantis as the final destination feels more suitable than simply reaching the bottom of the
+                    sea – or emerging at the surface again.
+                </p>
+                <p>
+                    With the remix, I’ve added a lot more depth, and tried to remove most of the “sparseness” from the
+                    original. Also, the final section is a bit longer. The Revisited remix is probably closer to
+                    “Ocean Dive” than “At the Bottom of the Sea”, as the latter of the two somewhat spoiled the
+                    Forever Valley section.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

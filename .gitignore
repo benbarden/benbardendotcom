@@ -1,5 +1,6 @@
 .idea/
 .DS_Store
 Thumbs.db
-creds/
-
+includes/creds/
+vendor/
+data/cache/

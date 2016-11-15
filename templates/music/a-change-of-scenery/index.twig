@@ -1,0 +1,168 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li class="active">A Change of Scenery</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">A Change of Scenery</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    <em>A Change of Scenery</em> is my fifth album. Its name comes from my relocation back to the UK
+                    in 2009, after two and a half years living in Australia.
+                </p>
+                <p>
+                    The album is actually more of a "loose ends" compilation, but as there is plenty of new material
+                    and the quality is good, I list it as my fifth album.
+                </p>
+                <p>
+                    The cover is typically British: a snowy landscape with a red phone box. An alternative cover
+                    included a photo of me in front of Big Ben.
+                </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th style="text-align: center;">Duration</th>
+                        <th colspan="3" style="text-align: center;">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bb-category-tracklist">
+                    <tr>
+                        <td colspan="5"><em>loading table...</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h2>Remixology</h2>
+                <p>The album includes several remixes of tracks from earlier albums.</p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Original version</th>
+                        <th>Original album</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Longing</td>
+                        <td>Travelling Unravelled</td>
+                        <td><a href="/music/the-unravelling-of-travelling/">The Unravelling of Travelling</a></td>
+                    </tr>
+                    <tr>
+                        <td>Nebular Dreaming</td>
+                        <td>Nebular Dreams</td>
+                        <td><a href="/music/besidewalk-plight/">Besidewalk Plight</a></td>
+                    </tr>
+                    <tr>
+                        <td>The Wilderness, Part 2</td>
+                        <td>The Wilderness</td>
+                        <td><a href="/music/besidewalk-plight/">Besidewalk Plight</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lifeline II</td>
+                        <td>Lifeline</td>
+                        <td><a href="/music/the-unravelling-of-travelling/">The Unravelling of Travelling</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h2>Loose ends</h2>
+                <ul>
+                    <li>The similar titles used for Sunwatching, Moonsurfing and Starlining are linked to the original
+                        title for the album - <em>Sun, Moon and Stars</em>.</li>
+                    <li>Stepping Stones gets its name from the fact it bridges the gaps between a few tracks.
+                        A track called "Begin Spring" forms the opening and closing of the piece, whereas two tracks from
+                        <em>Citadel City</em> - "Into the unknown" and "The Underdog" - make up most of the
+                        remainder.</li>
+                    <li>The remixed tracks from <em>Besidewalk Plight</em> were originally going to
+                        become a complete album remix, similar to <em>Hidden in the Beyond</em>. This idea
+                        resurfaced on the <em>Revisited</em> album project.</li>
+                </ul>
+                <h2>Album changes</h2>
+                <p>
+                    Some tracks were originally written for other albums.
+                </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Original album</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Deviance</td>
+                        <td>Forgotten Past</td>
+                    </tr>
+                    <tr>
+                        <td>Forgotten Past</td>
+                        <td>Forgotten Past</td>
+                    </tr>
+                    <tr>
+                        <td>The Sounds of Time</td>
+                        <td>Forgotten Past</td>
+                    </tr>
+                    <tr>
+                        <td>Blanket of Snow</td>
+                        <td>Landscapes</td>
+                    </tr>
+                    <tr>
+                        <td>Silent Shore</td>
+                        <td>Landscapes</td>
+                    </tr>
+                    <tr>
+                        <td>Listen for the mountains</td>
+                        <td>Citadel City</td>
+                    </tr>
+                    <tr>
+                        <td>Sunwatching</td>
+                        <td>Citadel City</td>
+                    </tr>
+                    <tr>
+                        <td>Invisible in the Shadows</td>
+                        <td>The Unravelling of Travelling</td>
+                    </tr>
+                    <tr>
+                        <td>Model Railway</td>
+                        <td>The Unravelling of Travelling</td>
+                    </tr>
+                    <tr>
+                        <td>Climbing the Peak</td>
+                        <td>The Unravelling of Travelling</td>
+                    </tr>
+                    </tbody>
+                </table>
+{% include 'theme/licensing.twig' %}
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/a-change-of-scenery-250px.jpg" alt="Ben Barden - A Change of Scenery">
+                {% include 'theme/player/render.twig' %}
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+    <script src="/assets/js/albums/a-change-of-scenery.js"></script>
+    {% include 'theme/player/base.twig' %}
+{% endblock footer_scripts %}

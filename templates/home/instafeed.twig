@@ -1,0 +1,12 @@
+<script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '44183844',
+        clientId: '{{ Instagram.ClientId }}',
+        accessToken: '{{ Instagram.AccessToken }}',
+        limit: 7,
+        template: '<a href="{{link}}" style="border: 0;"><img src="{{image}}" alt="{{caption}}" title="{{caption}}" style="margin: 6px;" /></a>'
+    });
+    feed.run();
+</script>
