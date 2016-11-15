@@ -15,30 +15,39 @@ RedirectMatch 301 /feed/ https://benbarden.wordpress.com/feed
 # Can't get this to work!!
 Redirect 301 /​feeds.php?name=articles https://benbarden.wordpress.com/feed
 
+# Music
+Redirect 301 /music/category/upbeat-dance-modern.php /music/
+Redirect 301 /music/category/orchestral-movie-score-videogame.php /music/
+Redirect 301 /music/category/piano.php /music/
+Redirect 301 /music/category/ambient.php /music/
+Redirect 301 /music/category/synth.php /music/
+Redirect 301 /music/category/guitar.php /music/
+Redirect 301 /music/category/experimental-progressive-long.php /music/
+
+Redirect 301 /music/creations/parallel-paths/ /music/
+Redirect 301 /music/creations/album-6/ /music/
+Redirect 301 /music/parallel-paths/ /music/
+Redirect 301 /music/creations/ /music/
+Redirect 301 /music/spotify-playlists/ /music/
+Redirect 301 /music/favourite-artists/ /music/
+Redirect 301 /view.php/area/52/twice-midnight /music/twice-midnight/
+Redirect 301 /music/albums/hidden-in-the-beyond/ /music/hidden-in-the-beyond/
+Redirect 301 /music/albums.php /music/
+
 # Single redirects
-Redirect 301 /2015/04/updating-the-layout-of-cityam-com-the-what-and-why/ http://www.benbarden.com/portfolio/cityam-homepage-category-redesign-2015-03.php
+Redirect 301 /destinations /about/destinations.php
+Redirect 301 /my-blogs/ /
+
+Redirect 301 /on-the-fence-a-new-tagline-and-a-new-look/ https://benbarden.wordpress.com/
+
+Redirect 301 /2015/04/updating-the-layout-of-cityam-com-the-what-and-why/ /portfolio/cityam-homepage-category-redesign-2015-03.php
 
 Redirect 301 /2014/05/setting-up-twig-in-laravel/ https://benbarden.wordpress.com/2015/07/05/setting-up-twig-in-laravel/
 
-Redirect 301 /view.php/article/1048/a-beginners-guide-to-google-analytics-part-1 http://www.benbarden.com/ebooks
-Redirect 301 /view.php/article/1049/a-beginners-guide-to-google-analytics-part-2 http://www.benbarden.com/ebooks
-Redirect 301 /view.php/article/1057/a-beginners-guide-to-google-analytics-part-3-comparing-statistics http://www.benbarden.com/ebooks
-Redirect 301 /view.php/article/1064/a-beginners-guide-to-google-analytics-part-4-traffic-sources-and-content http://www.benbarden.com/ebooks
-
-Redirect 301 /music/creations/parallel-paths/ http://www.benbarden.com/music/symmetry/
-Redirect 301 /music/creations/album-6/ http://www.benbarden.com/music/symmetry/
-Redirect 301 /music/parallel-paths/ http://www.benbarden.com/music/symmetry/
-Redirect 301 /music/creations/ http://www.benbarden.com/music/
-Redirect 301 /music/spotify-playlists/ http://www.benbarden.com/music/
-Redirect 301 /music/favourite-artists/ http://www.benbarden.com/music/
-Redirect 301 /view.php/area/52/twice-midnight http://www.benbarden.com/music/twice-midnight/
-Redirect 301 /music/albums/hidden-in-the-beyond/ http://www.benbarden.com/music/hidden-in-the-beyond/
-Redirect 301 /music/albums.php http://www.benbarden.com/music/
-
-Redirect 301 /destinations http://www.benbarden.com/about/destinations.php
-Redirect 301 /my-blogs/ http://www.benbarden.com/
-
-Redirect 301 /on-the-fence-a-new-tagline-and-a-new-look/ https://benbarden.wordpress.com/
+Redirect 301 /view.php/article/1048/a-beginners-guide-to-google-analytics-part-1 /ebooks
+Redirect 301 /view.php/article/1049/a-beginners-guide-to-google-analytics-part-2 /ebooks
+Redirect 301 /view.php/article/1057/a-beginners-guide-to-google-analytics-part-3-comparing-statistics /ebooks
+Redirect 301 /view.php/article/1064/a-beginners-guide-to-google-analytics-part-4-traffic-sources-and-content /ebooks
 
 ## Block referrers
 RewriteCond %{HTTP_REFERER} semalt.com [NC,OR]

@@ -10,149 +10,179 @@
         <priority>1.00</priority>
     </url>
     <url>
+        <loc>http://www.benbarden.com/about/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>http://www.benbarden.com/music/</loc>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/ebooks/</loc>
+        <loc>http://www.benbarden.com/music/a-world-beyond/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/besidewalk-plight/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/hidden-in-the-beyond/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/twice-midnight/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/the-unravelling-of-travelling/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/a-change-of-scenery/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/symmetry-1/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/symmetry-2/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/01-the-cliffs.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/02-journey-to-atlantis.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/03-the-sword.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/04-somewhere-there.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/05-subterranean-labyrinth.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/06-the-music-box.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/07-green-fields.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/08-descendance.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/09-eternal-evolution.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/10-aries.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/11-the-island.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/12-sailing-under-clouds.php</loc>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>http://www.benbarden.com/portfolio/</loc>
         <changefreq>daily</changefreq>
-        <priority>0.80</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/about/</loc>
+        <loc>http://www.benbarden.com/portfolio/cityam-homepage-category-redesign-2015-03.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.80</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/albums.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-aws-migration.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/category/upbeat-dance-modern.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-wedding-collection.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/category/orchestral-movie-score-videogame.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-new-ordering-wizard.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/category/piano.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-admin-screens.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/category/ambient.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-snapshot.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/category/synth.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-online-invoicing.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/category/guitar.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-online-payments.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
     </url>
     <url>
-        <loc>http://www.benbarden.com/music/category/experimental-progressive-long.php</loc>
+        <loc>http://www.benbarden.com/portfolio/printed-com-rebranding.php</loc>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/ebooks/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.60</priority>
     </url>
     <url>
         <loc>http://www.benbarden.com/downloads/Ben_Barden_-_A_Beginners_Guide_to_Google_Analytics.pdf</loc>
         <lastmod>2015-12-28T11:37:31+00:00</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/cityam-homepage-category-redesign-2015-03.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-aws-migration.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-wedding-collection.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-new-ordering-wizard.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-admin-screens.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-snapshot.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-online-invoicing.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-online-payments.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/portfolio/printed-com-rebranding.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/index.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/a-world-beyond/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/besidewalk-plight/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/hidden-in-the-beyond/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/twice-midnight/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/the-unravelling-of-travelling/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/a-change-of-scenery/</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.51</priority>
+        <priority>0.60</priority>
     </url>
 </urlset>
