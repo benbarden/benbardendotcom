@@ -1,0 +1,60 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li class="active">Voyage into Space</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Voyage into Space</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    <em>Voyage into Space</em> is my ninth album, and the third released under the name "GFD".
+                </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th style="text-align: center;">Duration</th>
+                        <th colspan="3" style="text-align: center;">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bb-category-tracklist">
+                    <tr>
+                        <td colspan="5"><em>loading table...</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+{% include 'theme/licensing.twig' %}
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                {#<img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">#}
+                {% include 'theme/player/render.twig' %}
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+    <script src="/assets/js/albums/voyage-into-space.js?v=1"></script>
+    {% include 'theme/player/base.twig' %}
+{% endblock footer_scripts %}
