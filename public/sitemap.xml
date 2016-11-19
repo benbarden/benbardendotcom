@@ -125,6 +125,51 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/13-stormy-shores.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/14-clear-blue-skies.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/15-morning-exploring.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/16-rainforest.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/17-candlelit-cavern.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/18-no-way-out.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/19-into-darkness.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/revisited/tracks/20-twisted-vision.php</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/voyage-into-space/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>http://www.benbarden.com/portfolio/</loc>
         <changefreq>daily</changefreq>
         <priority>0.70</priority>
