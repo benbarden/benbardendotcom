@@ -30,6 +30,7 @@ Redirect 301 /music/parallel-paths/ /music/
 Redirect 301 /music/creations/ /music/
 Redirect 301 /music/spotify-playlists/ /music/
 Redirect 301 /music/favourite-artists/ /music/
+Redirect 301 /view.php/area/40/music /music/
 Redirect 301 /view.php/area/52/twice-midnight /music/twice-midnight/
 Redirect 301 /music/albums/hidden-in-the-beyond/ /music/hidden-in-the-beyond/
 Redirect 301 /music/albums.php /music/
