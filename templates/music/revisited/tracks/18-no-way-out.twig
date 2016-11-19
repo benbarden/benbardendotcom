@@ -1,0 +1,58 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "No Way Out" is a remix of "Silhouette" from <em>Besidewalk Plight</em>.
+                </p>
+                <p>
+                    The original "Silhouette" was written alongside "Gravity" - both pieces were very synth-heavy.
+                    Of the remixes, only this version ("No Way Out") has remained as focused on synths as the original.
+                </p>
+                <p>
+                    It was an unusual piece for me - instead of a melody with a start, middle and end, it's mostly
+                    just 'snatches' of music. However, despite the style, only the drums use loops.
+                </p>
+                <p>
+                    The track also leaves you hanging, as it lacks a well-rounded ending.
+                </p>
+                <p>
+                    This remix varies the sounds, somewhat tones down the raw feel of the original,
+                    but retains the eerie, ominous vibe.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

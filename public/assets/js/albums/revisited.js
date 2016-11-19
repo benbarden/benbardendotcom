@@ -4,6 +4,9 @@ var playlistPath = "http://coda.city/downloads/ben-barden-music/revisited/";
 var bbMusicTracklist = [];
 
 bbMusicTracklist.push({
+    title: "A World Beyond"
+});
+bbMusicTracklist.push({
     title: "01. The Cliffs",
     mp3: playlistPath + encodeURI('01. The Cliffs (Revisited Remix).mp3'),
     duration: "3:14",
@@ -64,6 +67,9 @@ bbMusicTracklist.push({
     infoUrl: "/music/revisited/tracks/10-aries.php"
 });
 bbMusicTracklist.push({
+    title: "Besidewalk Plight"
+});
+bbMusicTracklist.push({
     title: "11. The Island",
     mp3: playlistPath + encodeURI('11. The Island (Revisited Remix).mp3'),
     duration: "3:09",
@@ -74,4 +80,52 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('12. Sailing Under Clouds (Revisited Remix).mp3'),
     duration: "3:24",
     infoUrl: "/music/revisited/tracks/12-sailing-under-clouds.php"
+});
+bbMusicTracklist.push({
+    title: "13. Stormy Shores",
+    mp3: playlistPath + encodeURI('13. Stormy Shores (Revisited Remix).mp3'),
+    duration: "3:34",
+    infoUrl: "/music/revisited/tracks/13-stormy-shores.php"
+});
+bbMusicTracklist.push({
+    title: "14. Clear Blue Skies",
+    mp3: playlistPath + encodeURI('14. Clear Blue Skies (Revisited Remix).mp3'),
+    duration: "4:39",
+    infoUrl: "/music/revisited/tracks/14-clear-blue-skies.php"
+});
+bbMusicTracklist.push({
+    title: "15. Morning Exploring",
+    mp3: playlistPath + encodeURI('15. Morning Exploring (Revisited Remix).mp3'),
+    duration: "2:26",
+    infoUrl: "/music/revisited/tracks/15-morning-exploring.php"
+});
+bbMusicTracklist.push({
+    title: "16. Rainforest",
+    mp3: playlistPath + encodeURI('16. Rainforest (Revisited Remix).mp3'),
+    duration: "3:31",
+    infoUrl: "/music/revisited/tracks/16-rainforest.php"
+});
+bbMusicTracklist.push({
+    title: "17. Candlelit Cavern",
+    mp3: playlistPath + encodeURI('17. Candlelit Cavern (Revisited Remix).mp3'),
+    duration: "3:27",
+    infoUrl: "/music/revisited/tracks/17-candlelit-cavern.php"
+});
+bbMusicTracklist.push({
+    title: "18. No Way Out",
+    mp3: playlistPath + encodeURI('18. No Way Out (Revisited Remix).mp3'),
+    duration: "2:38",
+    infoUrl: "/music/revisited/tracks/18-no-way-out.php"
+});
+bbMusicTracklist.push({
+    title: "19. Into Darkness",
+    mp3: playlistPath + encodeURI('19. Into Darkness (Revisited Remix).mp3'),
+    duration: "4:59",
+    infoUrl: "/music/revisited/tracks/19-into-darkness.php"
+});
+bbMusicTracklist.push({
+    title: "20. Twisted Vision",
+    mp3: playlistPath + encodeURI('20. Twisted Vision (Revisited Remix).mp3'),
+    duration: "3:44",
+    infoUrl: "/music/revisited/tracks/20-twisted-vision.php"
 });

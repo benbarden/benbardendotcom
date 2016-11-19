@@ -1,0 +1,58 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "Twisted Vision" is a remix of track 10 from <em>Besidewalk Plight</em>.
+                </p>
+                <p>
+                    "Twisted Vision" was my first dance track. There are plenty of dance tracks on <em>Symmetry 1</em>
+                    and <em>Symmetry 2</em>, including some dance remixes. But this was the first one I included
+                    on an album.
+                </p>
+                <p>
+                    The remix isn't far removed from the original, aside from the sound effects, which I couldn't
+                    reproduce, but wanted to change anyway.
+                </p>
+                <p>
+                    I'm much happier to have this as the actual endpoint for <em>Besidewalk Plight</em>; it ends
+                    a musical progression from the first 10 tracks on the album. However, the original album
+                    then continued for five more tracks, and they weren't as good or consistent as what came
+                    before. With these remixes, the album feels complete.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

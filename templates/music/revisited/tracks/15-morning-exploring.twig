@@ -1,0 +1,56 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "Morning Exploring" is a remix of "Jumpstart" from <em>Besidewalk Plight</em>.
+                </p>
+                <p>
+                    As with most tracks from this album, "Morning Exploring" has been renamed to better fit the
+                    overall story.
+                </p>
+                <p>
+                    Following "Clear Blue Skies", it's another upbeat track, and one I saw quite a bit of
+                    potential in when doing this remix. I've tried to make it brighter and fresher with better
+                    instruments and a few changes to make the piece feel more complete.
+                </p>
+                <p>
+                    Unlike some of the other tracks for this project, which have been remixed previously, this
+                    is one of the tracks I've never released a new version of until now.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

@@ -1,0 +1,55 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li><a href="/music/revisited/">Revisited</a></li>
+            <li class="active">{{ TrackTitle }}</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">{{ TrackTitle }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    "Stormy Shores" is a remix of "Gravity" from <em>Besidewalk Plight</em>.
+                </p>
+                <p>
+                    As with most tracks from this album, "Stormy Shores" has been renamed to better fit the
+                    overall story.
+                </p>
+                <p>
+                    I wrote the original as a deliberate departure from <em>A World Beyond</em>, focusing more on synths
+                    than piano.
+                </p>
+                <p>
+                    The <em>Revisited</em> remix is closer in style to the "Low Gravity remix" from
+                    <em>Twice Midnight</em>, and also the GFD remix on <em>Symmetry 2</em>.
+                </p>
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                <img src="/assets/img/music/revisited-250px.jpg" alt="Ben Barden - Revisited">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}

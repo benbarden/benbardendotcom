@@ -56,21 +56,32 @@
                 var rowHtml = '';
 
                 for (i=0; i<bbMusicTracklist.length; i++) {
-                    trackNo = i+1;
                     trackTitle = bbMusicTracklist[i]['title'];
                     trackTime = bbMusicTracklist[i]['duration'];
                     trackMp3 = bbMusicTracklist[i]['mp3'];
                     trackMoreInfoUrl = bbMusicTracklist[i]['infoUrl'];
                     rowHtml  = '<tr>';
                     rowHtml += '<td>' + trackTitle + '</td>';
-                    rowHtml += '<td style="text-align: center;">' + trackTime + '</td>';
-                    trackPlayLink = '<a href="#track=' + trackNo + '">Play</a>';
-                    rowHtml += '<td style="text-align: center;">' + trackPlayLink + '</td>';
-                    trackDownloadLink = '<a href="' + trackMp3 + '" target="_blank">Download</a>';
-                    rowHtml += '<td style="text-align: center;">' + trackDownloadLink + '</td>';
+                    if (typeof trackTime !== 'undefined') {
+                        rowHtml += '<td style="text-align: center;">' + trackTime + '</td>';
+                    } else {
+                        rowHtml += '<td style="text-align: center;"></td>';
+                    }
+                    if (typeof trackMp3 !== 'undefined') {
+                        trackNo = i+1;
+                        trackPlayLink = '<a href="#track=' + trackNo + '">Play</a>';
+                        rowHtml += '<td style="text-align: center;">' + trackPlayLink + '</td>';
+                        trackDownloadLink = '<a href="' + trackMp3 + '" target="_blank">Download</a>';
+                        rowHtml += '<td style="text-align: center;">' + trackDownloadLink + '</td>';
+                    } else {
+                        rowHtml += '<td style="text-align: center;"></td>';
+                        rowHtml += '<td style="text-align: center;"></td>';
+                    }
                     if (typeof trackMoreInfoUrl !== 'undefined') {
                         trackMoreInfoLink = '<a href="' + trackMoreInfoUrl + '">More info</a>';
                         rowHtml += '<td style="text-align: center;">' + trackMoreInfoLink + '</td>';
+                    } else {
+                        rowHtml += '<td style="text-align: center;"></td>';
                     }
                     rowHtml += '</tr>';
                     tableHtml += rowHtml;
