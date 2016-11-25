@@ -26,6 +26,21 @@
                 <p>
                     The photos for the album were taken at Lighthouse Beach, Port Macquarie, Australia.
                 </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center;">#</th>
+                        <th>Name</th>
+                        <th style="text-align: center;">Duration</th>
+                        <th colspan="3" style="text-align: center;">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bb-category-tracklist">
+                    <tr>
+                        <td colspan="6"><em>loading table...</em></td>
+                    </tr>
+                    </tbody>
+                </table>
                 <h2>Original sleeve notes:</h2>
                 <h3>From monthly tracks to total freedom</h3>
                 <p>
@@ -65,91 +80,7 @@
             </div>
             <div class="col-md-4">
                 <img src="/assets/img/music/besidewalk-plight-250px.jpg" alt="Ben Barden - Besidewalk Plight">
-                <h2>Track listing</h2>
-                <table class="table-striped table-condensed" style="width: 100%;">
-                    <tbody>
-                    <tr>
-                        <th style="background: #000; color: #fff; font-weight: bold; width: 10%; text-align: center;">#</th>
-                        <th style="background: #000; color: #fff; font-weight: bold; width: 60%;">Track</th>
-                        <th style="background: #000; color: #fff; font-weight: bold; width: 30%;">Duration</th>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">1</td>
-                        <td>Gravity</td>
-                        <td>3:05</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">2</td>
-                        <td>Nebular Dreams</td>
-                        <td>3:54</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">3</td>
-                        <td>Jumpstart</td>
-                        <td>2:19</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">4</td>
-                        <td>Besidewalk Plight</td>
-                        <td>3:02</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">5</td>
-                        <td>Shine Light</td>
-                        <td>3:37</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">6</td>
-                        <td>Silhouette</td>
-                        <td>2:49</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">7</td>
-                        <td>Pyramid</td>
-                        <td>3:25</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">8</td>
-                        <td>Our Memories</td>
-                        <td>4:08</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">9</td>
-                        <td>The Path of No Return</td>
-                        <td>2:09</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">10</td>
-                        <td>Twisted Vision</td>
-                        <td>3:43</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">11</td>
-                        <td>The Turning Tide</td>
-                        <td>3:20</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">12</td>
-                        <td>The Wilderness</td>
-                        <td>2:45</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">13</td>
-                        <td>The Last Ones (Phase 1)</td>
-                        <td>3:22</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">14</td>
-                        <td>The Last Ones (Phase 2)</td>
-                        <td>5:32</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">15</td>
-                        <td>The Last Ones (Phase 3)</td>
-                        <td>3:14</td>
-                    </tr>
-                    </tbody>
-                </table>
+                {% include 'theme/player/render.twig' %}
             </div>
         </div>
 
@@ -160,4 +91,6 @@
 {% endblock page_body %}
 
 {% block footer_scripts %}
+    <script src="/assets/js/albums/besidewalk-plight.js?v=2"></script>
+    {% include 'theme/player/base.twig' %}
 {% endblock footer_scripts %}

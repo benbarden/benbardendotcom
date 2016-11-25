@@ -24,6 +24,21 @@
                     The photos for this album were taken at Lighthouse Beach, Port Macquarie, Australia - much like the shots taken
                     for <em>Besidewalk Plight</em>. This album was originally intended as a follow-up.
                 </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center;">#</th>
+                        <th>Name</th>
+                        <th style="text-align: center;">Duration</th>
+                        <th colspan="3" style="text-align: center;">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bb-category-tracklist">
+                    <tr>
+                        <td colspan="6"><em>loading table...</em></td>
+                    </tr>
+                    </tbody>
+                </table>
                 <h2>Chronology</h2>
                 <p>
                     I started working on <em>Twice Midnight</em> after completing <em>Besidewalk Plight</em>,
@@ -71,112 +86,7 @@
             </div>
             <div class="col-md-4">
                 <img src="/assets/img/music/twice-midnight-250px.jpg" alt="Ben Barden - Twice Midnight">
-                <h2>Track listing</h2>
-                <table class="table-striped table-condensed" style="width: 100%;">
-                    <tbody>
-                    <tr>
-                        <th style="background: #000; color: #fff; font-weight: bold; width: 10%; text-align: center;">#</th>
-                        <th style="background: #000; color: #fff; font-weight: bold; width: 60%;">Track</th>
-                        <th style="background: #000; color: #fff; font-weight: bold; width: 30%;">Duration</th>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">1</td>
-                        <td>Midnight 1</td>
-                        <td>1:12</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">2</td>
-                        <td>Waiting for the Sun</td>
-                        <td>3:52</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">3</td>
-                        <td>Opposites Attract</td>
-                        <td>2:55</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">4</td>
-                        <td>The Voyage</td>
-                        <td>2:16</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">5</td>
-                        <td>Twilight Tide</td>
-                        <td>3:57</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">6</td>
-                        <td>Prosperity</td>
-                        <td>3:04</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">7</td>
-                        <td>Moon Eclipse</td>
-                        <td>6:10</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">8</td>
-                        <td>Woodland Clearing</td>
-                        <td>4:40</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">9</td>
-                        <td>Between the Trees</td>
-                        <td>4:21</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">10</td>
-                        <td>Radial Circumference</td>
-                        <td>3:08</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">11</td>
-                        <td>Forever Field</td>
-                        <td>4:31</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">12</td>
-                        <td>To the ends of the earth</td>
-                        <td>4:41</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">13</td>
-                        <td>Melting Candles</td>
-                        <td>2:35</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">14</td>
-                        <td>Solar Eclipse</td>
-                        <td>5:25</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">15</td>
-                        <td>The End of Existence</td>
-                        <td>4:38</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">16</td>
-                        <td>Midnight 2</td>
-                        <td>9:25</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">17</td>
-                        <td>Gravity (Ben's Low Gravity Remix) *</td>
-                        <td>2:57</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">18</td>
-                        <td>Circumference *</td>
-                        <td>3:08</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #cccccc;">
-                        <td style="text-align: center;">19</td>
-                        <td>Night Lights *</td>
-                        <td>0:54</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p>* denotes a bonus track</p>
+                {% include 'theme/player/render.twig' %}
             </div>
         </div>
 
@@ -187,4 +97,6 @@
 {% endblock page_body %}
 
 {% block footer_scripts %}
+    <script src="/assets/js/albums/twice-midnight.js?v=2"></script>
+    {% include 'theme/player/base.twig' %}
 {% endblock footer_scripts %}

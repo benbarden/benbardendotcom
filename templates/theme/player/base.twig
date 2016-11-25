@@ -55,12 +55,19 @@
                 var tableHtml = '';
                 var rowHtml = '';
 
+                var currentTrackNo = 0;
                 for (i=0; i<bbMusicTracklist.length; i++) {
                     trackTitle = bbMusicTracklist[i]['title'];
                     trackTime = bbMusicTracklist[i]['duration'];
                     trackMp3 = bbMusicTracklist[i]['mp3'];
                     trackMoreInfoUrl = bbMusicTracklist[i]['infoUrl'];
                     rowHtml  = '<tr>';
+                    if (typeof trackMp3 !== 'undefined') {
+                        currentTrackNo++;
+                        rowHtml += '<td style="text-align: center;">' + currentTrackNo + '</td>';
+                    } else {
+                        rowHtml += '<td style="text-align: center;"></td>';
+                    }
                     rowHtml += '<td>' + trackTitle + '</td>';
                     if (typeof trackTime !== 'undefined') {
                         rowHtml += '<td style="text-align: center;">' + trackTime + '</td>';
@@ -68,8 +75,7 @@
                         rowHtml += '<td style="text-align: center;"></td>';
                     }
                     if (typeof trackMp3 !== 'undefined') {
-                        trackNo = i+1;
-                        trackPlayLink = '<a href="#track=' + trackNo + '">Play</a>';
+                        trackPlayLink = '<a href="#track=' + currentTrackNo + '">Play</a>';
                         rowHtml += '<td style="text-align: center;">' + trackPlayLink + '</td>';
                         trackDownloadLink = '<a href="' + trackMp3 + '" target="_blank">Download</a>';
                         rowHtml += '<td style="text-align: center;">' + trackDownloadLink + '</td>';
