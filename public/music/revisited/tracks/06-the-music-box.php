@@ -4,7 +4,6 @@ require '../../../../includes/core/base.php';
 $trackTitle = 'The Music Box';
 $pageTitle = $trackTitle.' - Revisited - Music - Ben Barden';
 
-$bindings = array();
 $bindings['Site']['PageTitle'] = $pageTitle;
 $bindings['TrackTitle'] = $trackTitle;
 

@@ -21,4 +21,7 @@ Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem('../../templates');
 $twig = new Twig_Environment($loader, $twigOptions);
 
+$bindings = array();
+$bindings['Site']['IncludeGtm'] = $includeGtm == true ? 'Y' : 'N';
+
 chdir($currentDir);

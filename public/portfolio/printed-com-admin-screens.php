@@ -4,7 +4,6 @@ require '../../includes/core/base.php';
 $projectTitle = 'printed.com: Admin screens';
 $pageTitle = $projectTitle.' - Portfolio - Ben Barden';
 
-$bindings = array();
 $bindings['Site']['PageTitle'] = $pageTitle;
 $bindings['ProjectTitle'] = $projectTitle;
 

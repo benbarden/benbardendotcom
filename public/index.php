@@ -4,7 +4,6 @@ require '../includes/creds/instagram.php';
 
 $pageTitle = 'Ben Barden';
 
-$bindings = array();
 $bindings['Site']['PageTitle'] = $pageTitle;
 $bindings['Instagram']['ClientId'] = $instagramClientId;
 $bindings['Instagram']['AccessToken'] = $instagramAccessToken;
