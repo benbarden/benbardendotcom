@@ -1,0 +1,72 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/music/">Music</a></li>
+            <li class="active">Ten</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Ten</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    <em>Ten</em> is my tenth album.
+                </p>
+                <h2>FAWM II</h2>
+                <p>
+                    I'm hoping to write most of this album as part of
+                    <a href="http://www.fawm.org" target="_blank">FAWM 2017</a>. This will be my second
+                    attempt at completing FAWM - my first attempt was in 2007. The tracks I wrote that year
+                    formed the basis for
+                    <a href="/music/the-unravelling-of-travelling/"><em>The Unravelling of Travelling</em></a>.
+                </p>
+                <p>
+                    2017 marks 10 years since I last participated in FAWM. The album title <em>Ten</em> feels quite apt.
+                </p>
+                <table class="table-striped table-condensed" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center;">#</th>
+                        <th>Name</th>
+                        <th style="text-align: center;">Duration</th>
+                        <th colspan="3" style="text-align: center;">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody id="bb-category-tracklist">
+                    <tr>
+                        <td colspan="6"><em>loading table...</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+{% include 'theme/licensing.twig' %}
+            </div>
+            <div class="col-md-2">
+                &nbsp;
+            </div>
+            <div class="col-md-4">
+                {#<img src="/assets/img/music/voyage-into-space-cover-500px.jpg" alt="Ben Barden - Voyage into Space" style="width: 250px; height: 250px;">#}
+                {% include 'theme/player/render.twig' %}
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+    <script src="/assets/js/albums/ten.js?v=0"></script>
+    {% include 'theme/player/base.twig' %}
+{% endblock footer_scripts %}
