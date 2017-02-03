@@ -13,3 +13,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('02. Ben Barden - Lost in a Dream.mp3'),
     duration: "3:50"
 });
+bbMusicTracklist.push({
+    title: "Saturday Groove",
+    mp3: playlistPath + encodeURI('03. Ben Barden - Saturday Groove.mp3'),
+    duration: "3:39"
+});
