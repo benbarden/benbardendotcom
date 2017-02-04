@@ -18,3 +18,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('03. Ben Barden - Saturday Groove.mp3'),
     duration: "3:39"
 });
+bbMusicTracklist.push({
+    title: "Eastern Echoes",
+    mp3: playlistPath + encodeURI('04. Ben Barden - Eastern Echoes.mp3'),
+    duration: "3:51"
+});
