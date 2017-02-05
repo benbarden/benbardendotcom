@@ -28,3 +28,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('05. Ben Barden - Watching the Stars Go By.mp3'),
     duration: "4:24"
 });
+bbMusicTracklist.push({
+    title: "A Figure in the Darkness",
+    mp3: playlistPath + encodeURI('06. Ben Barden - A Figure in the Darkness.mp3'),
+    duration: "4:09"
+});
