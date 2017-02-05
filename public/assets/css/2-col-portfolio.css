@@ -24,3 +24,23 @@ blockquote {
 #bb-blog-post-wrapper ul, #bb-blog-link-wrapper ul {
     margin: 0 0 0 15px; padding: 0;
 }
+
+.music-landing-album-cover {
+    border: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.album-grid-title {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.album-grid-info {
+    border-bottom: 2px solid #cccccc;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
