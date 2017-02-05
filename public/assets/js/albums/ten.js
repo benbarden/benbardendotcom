@@ -23,3 +23,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('04. Ben Barden - Eastern Echoes.mp3'),
     duration: "3:51"
 });
+bbMusicTracklist.push({
+    title: "Watching the Stars Go By",
+    mp3: playlistPath + encodeURI('05. Ben Barden - Watching the Stars Go By.mp3'),
+    duration: "4:24"
+});
