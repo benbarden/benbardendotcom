@@ -33,3 +33,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('06. Ben Barden - A Figure in the Darkness.mp3'),
     duration: "4:09"
 });
+bbMusicTracklist.push({
+    title: "Seventh Road",
+    mp3: playlistPath + encodeURI('07. Ben Barden - Seventh Road.mp3'),
+    duration: "2:37"
+});
