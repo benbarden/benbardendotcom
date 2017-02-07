@@ -38,3 +38,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('07. Ben Barden - Seventh Road.mp3'),
     duration: "2:37"
 });
+bbMusicTracklist.push({
+    title: "Retro Disco",
+    mp3: playlistPath + encodeURI('08. Ben Barden - Retro Disco.mp3'),
+    duration: "3:14"
+});
