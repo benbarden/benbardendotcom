@@ -43,3 +43,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('08. Ben Barden - Retro Disco.mp3'),
     duration: "3:14"
 });
+bbMusicTracklist.push({
+    title: "Rainbows",
+    mp3: playlistPath + encodeURI('09. Ben Barden - Rainbows.mp3'),
+    duration: "3:28"
+});
