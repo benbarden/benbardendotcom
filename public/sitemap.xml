@@ -65,6 +65,16 @@
         <priority>0.80</priority>
     </url>
     <url>
+        <loc>http://www.benbarden.com/music/voyage-into-space/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://www.benbarden.com/music/ten/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
         <loc>http://www.benbarden.com/music/revisited/tracks/01-the-cliffs.php</loc>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
@@ -161,11 +171,6 @@
     </url>
     <url>
         <loc>http://www.benbarden.com/music/revisited/tracks/20-twisted-vision.php</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>http://www.benbarden.com/music/voyage-into-space/</loc>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
