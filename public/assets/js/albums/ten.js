@@ -48,3 +48,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('09. Ben Barden - Rainbows.mp3'),
     duration: "3:28"
 });
+bbMusicTracklist.push({
+    title: "Times Ten",
+    mp3: playlistPath + encodeURI('10. Ben Barden - Times Ten.mp3'),
+    duration: "3:21"
+});
