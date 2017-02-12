@@ -53,3 +53,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('10. Ben Barden - Times Ten.mp3'),
     duration: "3:21"
 });
+bbMusicTracklist.push({
+    title: "Synthetic Dreams",
+    mp3: playlistPath + encodeURI('11. Ben Barden - Synthetic Dreams.mp3'),
+    duration: "3:54"
+});
