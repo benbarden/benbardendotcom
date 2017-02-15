@@ -63,3 +63,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('12. Ben Barden - Distant Voices.mp3'),
     duration: "3:26"
 });
+bbMusicTracklist.push({
+    title: "Climate Control",
+    mp3: playlistPath + encodeURI('13. Ben Barden - Climate Control.mp3'),
+    duration: "4:11"
+});
