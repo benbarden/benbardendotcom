@@ -58,3 +58,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('11. Ben Barden - Synthetic Dreams.mp3'),
     duration: "3:54"
 });
+bbMusicTracklist.push({
+    title: "Distant Voices",
+    mp3: playlistPath + encodeURI('12. Ben Barden - Distant Voices.mp3'),
+    duration: "3:26"
+});
