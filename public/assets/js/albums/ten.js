@@ -68,3 +68,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('13. Ben Barden - Climate Control.mp3'),
     duration: "4:11"
 });
+bbMusicTracklist.push({
+    title: "Passage of Time",
+    mp3: playlistPath + encodeURI('14. Ben Barden - Passage of Time.mp3'),
+    duration: "4:15"
+});
