@@ -78,3 +78,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('15. Ben Barden - Get Ready.mp3'),
     duration: "3:48"
 });
+bbMusicTracklist.push({
+    title: "Departure",
+    mp3: playlistPath + encodeURI('16. Ben Barden - Departure.mp3'),
+    duration: "5:08"
+});
