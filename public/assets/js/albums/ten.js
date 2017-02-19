@@ -73,3 +73,8 @@ bbMusicTracklist.push({
     mp3: playlistPath + encodeURI('14. Ben Barden - Passage of Time.mp3'),
     duration: "4:15"
 });
+bbMusicTracklist.push({
+    title: "Get Ready",
+    mp3: playlistPath + encodeURI('15. Ben Barden - Get Ready.mp3'),
+    duration: "3:48"
+});
