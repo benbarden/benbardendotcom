@@ -1,0 +1,59 @@
+{% extends 'theme/base.twig' %}
+
+{% block page_body %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Archive</li>
+        </ul>
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Archive</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    You've probably reached this page because you tried to access one of my old websites.
+                    Here's what happened to a few of them. I'm in the process of updating this page -
+                    there will be more info here soon.
+                </p>
+                <h2>injader.com</h2>
+                <p>
+                    Injader was an open-source CMS that I developed between
+                    May 2005 and June 2010. Injader 2.4.4 was the last version before the project closed.
+                    Injader 2.4.5 came out in December 2010 with some security fixes. After a long hiatus,
+                    I released Injader 2.5.0 in September 2014, but by then things had moved on a lot.
+                </p>
+                <p>
+                    The work I'd originally intended for Injader 3.0.0 was scrapped, and I started over with a
+                    new project - Jewel CMS. However, it was not to be. See below for more.
+                </p>
+                <h2>jewelcms.com</h2>
+                <p>
+                    Jewel CMS was a continuation/revival of Injader, its versioning reset to 1.0.0. Even with a
+                    fairly major rewrite to the original codebase, there was a lot of work still to do.
+                    The project didn't last very long. I never announced its closure, but it didn't really get
+                    off the starting blocks. Moving servers pushed me to retire the site.
+                    You can still find the latest code on
+                    <a href="https://github.com/benbarden/jewelcms">GitHub</a>.
+                </p>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+
+    {% include 'theme/copyright.twig' %}
+
+</div>
+<!-- /.container -->
+{% endblock page_body %}
+
+{% block footer_scripts %}
+{% endblock footer_scripts %}
