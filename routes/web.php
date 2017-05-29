@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Homepage
+Route::get('/', 'WelcomeController@show')->name('welcome');
+
+// Single pages (no hierarchy)
+Route::get('/archive', 'SingleController@archive')->name('single.archive');
+
+// Music
+Route::get('/music', 'MusicController@landing')->name('music.landing');

@@ -1,0 +1,127 @@
+.fancy-table tr th {background: #9cf; color: #000;}
+.fancy-table tr td {background: #ededed; color: #000; border-bottom: 1px solid #999;}
+.fancy-table tr th, .fancy-table tr td {font-size: 100%; padding: 6px;}
+
+body {
+    background: #ffffff;
+    color: #000000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+nav {
+    background: #000;
+    color: #cdcdcd;
+    line-height: 1.6em;
+    padding: 14px 0 14px 40px;
+}
+
+nav span {
+    font-weight: bold;
+    margin: 2px 8px;
+}
+
+nav a {
+    color: #cdcdcd;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+ol li, ul li {
+    line-height: 1.6em;
+}
+
+h1 {
+    border-bottom: 1px solid #ededed;
+    padding: 0 0 20px 0;
+    max-width: 800px;
+}
+
+/*
+ * Clearfix tweak
+ * Credit: https://css-tricks.com/snippets/css/clear-fix/
+ */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Core theme stuff */
+.wrapper {
+    margin: 0 auto;
+    padding: 20px 0 20px 40px;
+}
+
+.page-wrap {
+    max-width: 800px;
+}
+
+/* Homepage */
+.homepage-box {
+    float: left;
+    margin: 0 10px;
+    width: 30%;
+}
+
+.hp-social-icon {
+    border: 0;
+    height: 36px;
+    vertical-align: middle;
+    width: 36px;
+}
+
+.hp-banner-image img {
+    height: 173px;
+    width: 360px;
+}
+
+.hp-banner-image-bg {
+    height: 173px;
+    width: 360px;
+}
+
+.hp-bg-voyage-into-space {
+    background-image: url('/img/music/voyage-into-space-cover-500px.jpg');
+    background-position: bottom right;
+}
+
+.hp-bg-revisited {
+    background-image: url('/img/music/revisited-800px.jpg');
+    background-position: 0px -500px;
+    background-repeat: no-repeat;
+}
+
+/* Music page */
+.music-box {
+    float: left;
+    margin: 0 10px;
+    width: 22%;
+}
+
+.music-box .album-image a img {
+    border: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.music-box .album-grid-title {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.music-box .album-grid-info {
+    border-bottom: 2px solid #cccccc;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: center;
+}

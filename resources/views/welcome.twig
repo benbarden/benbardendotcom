@@ -1,0 +1,67 @@
+{% extends 'theme/ben/base.twig' %}
+
+{% block page_body %}
+
+<h1>Welcome</h1>
+
+<p>Hi! Thanks for visiting my website.</p>
+
+<div class="group">
+    <div class="homepage-box">
+        <div class="hp-banner-image-bg hp-bg-revisited">
+        </div>
+        <div class="hp-body-text">
+            <h2>Music</h2>
+            <ul>
+                <li>Ten</li>
+                <li>Voyage into Space</li>
+                <li>Revisited</li>
+                <li><a href="{{ route('music.landing') }}">View all albums</a>...</li>
+            </ul>
+        </div>
+    </div>
+    <div class="homepage-box">
+        <div class="hp-banner-image">
+            <img src="/img/homepage/logic-pro-x-crystal-beach.png" alt="Logic Pro X - Crystal Beach by Ben Barden">
+        </div>
+        <div class="hp-body-text">
+            <h2>Projects</h2>
+            <ul>
+                <li>World of Switch</li>
+                <li>Bloggeries</li>
+                <li><a href="https://benbarden.wordpress.com" target="_blank">My blog</a></li>
+                <li>Portfolio</li>
+            </ul>
+        </div>
+    </div>
+    <div class="homepage-box">
+        <div class="hp-banner-image">
+            <img src="http://placehold.it/360x173">
+        </div>
+        <div class="hp-body-text">
+            <h2>About</h2>
+            <p>
+                I've worked in tech for nearly 20 years.
+                Currently working for Kobalt Music as Web Team Lead.
+                Read more...
+            </p>
+            <p>
+                Follow me:
+                <a href="https://twitter.com/benbarden" target="_blank">
+                    <img src="/img/social/twitter.png" alt="Twitter" title="Twitter" class="hp-social-icon"></a>
+                <a href="https://benbarden.wordpress.com" target="_blank">
+                    <img src="/img/social/wordpress.png" alt="Blog" title="Blog" class="hp-social-icon"></a>
+                <a href="https://www.linkedin.com/in/benbarden" target="_blank">
+                    <img src="/img/social/linkedin.png" alt="LinkedIn" title="LinkedIn" class="hp-social-icon"></a>
+                <a href="https://soundcloud.com/benbarden" target="_blank">
+                    <img src="/img/social/soundcloud.png" alt="Soundcloud" title="Soundcloud" class="hp-social-icon"></a>
+                <a href="https://instagram.com/benbarden/" target="_blank">
+                    <img src="/img/social/instagram.png" alt="Instagram" title="Instagram" class="hp-social-icon"></a>
+                <a href="mailto:fromtheblog@benbarden.com" target="_blank">
+                    <img src="/img/social/telegram.png" alt="Email" title="Email" class="hp-social-icon"></a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock page_body %}
