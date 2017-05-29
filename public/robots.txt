@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /assets/
-
-Sitemap: http://www.benbarden.com/sitemap.xml
+Disallow:
