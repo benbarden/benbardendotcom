@@ -7,9 +7,12 @@ body {
     color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 14px;
     line-height: 20px;
     margin: 0;
+}
+
+body, table tbody tr td {
+    font-size: 14px;
 }
 
 nav {
@@ -124,4 +127,11 @@ h1 {
     font-size: 12px;
     margin-bottom: 5px;
     text-align: center;
+}
+
+/* Album page */
+.album-landing-box {
+    float: left;
+    margin: 0 10px;
+    width: 22%;
 }

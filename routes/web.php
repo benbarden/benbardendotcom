@@ -19,3 +19,5 @@ Route::get('/archive', 'SingleController@archive')->name('single.archive');
 
 // Music
 Route::get('/music', 'MusicController@landing')->name('music.landing');
+
+Route::get('/music/{albumId}', 'MusicController@album')->name('music.album');
