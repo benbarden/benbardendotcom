@@ -12,4 +12,22 @@ class SingleController extends BaseController
 
         return view('single.archive', $bindings);
     }
+
+    public function about()
+    {
+        $bindings = array();
+
+        $bindings['TopTitle'] = 'About Ben Barden';
+
+        return view('single.about', $bindings);
+    }
+
+    public function ebooks()
+    {
+        $bindings = array();
+
+        $bindings['TopTitle'] = 'eBooks';
+
+        return view('single.ebooks', $bindings);
+    }
 }

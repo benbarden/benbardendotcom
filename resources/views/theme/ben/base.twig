@@ -10,13 +10,17 @@
     <span><a href="{{ route('welcome') }}">Home</a></span>
     <span><a href="{{ route('music.landing') }}">Music</a></span>
     <span>Portfolio</span>
-    <span>eBooks</span>
-    <span>About</span>
+    <span><a href="{{ route('single.ebooks') }}">eBooks</a></span>
+    <span><a href="{{ route('single.about') }}">About</a></span>
     <span><a href="https://benbarden.wordpress.com/" target="_blank">Blog</a></span>
 </nav>
 <div class="wrapper">
 {% block page_body %}
 {% endblock page_body %}
+    <p>
+        Copyright &copy; Ben Barden {{ 'now'|date('Y') }}.
+        Social icons by <a href="https://www.iconfinder.com/iconsets/social-media-2034" target="_blank">Iconfinder.com</a>.
+    </p>
 </div>
 {% if env == 'prod' %}
 <!-- Google Tag Manager -->
