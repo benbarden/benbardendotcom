@@ -1,3 +1,14 @@
+Redirect 301 /portfolio/cityam-homepage-category-redesign-2015-03.php /portfolio/city-am/homepage-category-redesign-2015-03
+
+Redirect 301 /portfolio/printed-com-aws-migration.php /portfolio/printed-com/aws-migration
+Redirect 301 /portfolio/printed-com-wedding-collection.php /portfolio/printed-com/wedding-collection
+Redirect 301 /portfolio/printed-com-new-ordering-wizard.php /portfolio/printed-com/new-ordering-wizard
+Redirect 301 /portfolio/printed-com-admin-screens.php /portfolio/printed-com/admin-screens
+Redirect 301 /portfolio/printed-com-snapshot.php /portfolio/printed-com/snapshot
+Redirect 301 /portfolio/printed-com-online-invoicing.php /portfolio/printed-com/online-invoicing
+Redirect 301 /portfolio/printed-com-online-payments.php /portfolio/printed-com/online-payments
+Redirect 301 /portfolio/printed-com-rebranding.php /portfolio/printed-com/rebranding
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews

@@ -21,7 +21,9 @@ Route::get('/about', 'SingleController@about')->name('single.about');
 
 // Music
 Route::get('/music', 'MusicController@landing')->name('music.landing');
-
 Route::get('/music/{albumId}', 'MusicController@album')->name('music.album');
-
 Route::get('/music/{albumId}/track/{trackId}', 'MusicController@track')->name('music.track');
+
+// Portfolio
+Route::get('/portfolio', 'PortfolioController@landing')->name('portfolio.landing');
+Route::get('/portfolio/{company}/{project}', 'PortfolioController@projectPage')->name('portfolio.projectPage');

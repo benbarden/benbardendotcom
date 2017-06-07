@@ -1,0 +1,14 @@
+{% extends 'theme/ben/base.twig' %}
+
+{% block page_body %}
+
+<h1>{{ TopTitle }}</h1>
+
+<div class="group">
+    <div class="page-wrap">
+        {% include ProjectPath~'info.twig' %}
+        {% include ProjectPath~'detail.twig' %}
+    </div>
+</div>
+
+{% endblock page_body %}

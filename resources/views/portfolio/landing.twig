@@ -1,0 +1,78 @@
+{% extends 'theme/ben/base.twig' %}
+
+{% block page_body %}
+
+<h1>{{ TopTitle }}</h1>
+
+<div class="group">
+    <div class="page-wrap">
+
+        <h2>City A.M.</h2>
+        <ul>
+            <li><a href="https://benbarden.wordpress.com/2016/09/10/seo-and-technical-issues-we-encountered-in-drupal-7/">SEO and technical issues we encountered in Drupal 7 - September 2016</a> <em>(links to my blog)</em></li>
+            <li><a href="https://benbarden.wordpress.com/2016/04/03/redesigning-city-a-m-march-2016/">Redesigning City A.M. - March 2016</a> <em>(links to my blog)</em></li>
+            <li><a href="https://benbarden.wordpress.com/2015/10/17/rebuilding-the-post-editor-at-city-am/">Rebuilding the post editor</a> - September 2015 <em>(links to my blog)</em></li>
+            <li><a href="{{ route('portfolio.projectPage', {'company': 'city-am', 'project': 'homepage-category-redesign-2015-03'}) }}">Homepage/Category page redesign and site layout</a> - changes up to March 2015</li>
+        </ul>
+        <h2>printed.com</h2>
+        <ul>
+            <li><a title="printed.com: AWS migration" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'aws-migration'}) }}">AWS migration</a> – February 2014</li>
+            <li><a title="printed.com: Wedding Collection" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'wedding-collection'}) }}">Wedding Collection</a> – November 2013</li>
+            <li><a title="printed.com: New ordering wizard" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'new-ordering-wizard'}) }}">New ordering wizard</a> – September 2013</li>
+            <li><a title="printed.com: Admin screens" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'admin-screens'}) }}">Admin screens</a> – regular work with no end date</li>
+            <li><a title="printed.com: Snapshot" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'snapshot'}) }}">Snapshot</a> – circa June 2012</li>
+            <li><a title="printed.com: Online Invoicing" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'online-invoicing'}) }}">Online invoicing</a> – March 2012</li>
+            <li><a title="printed.com: Online Payments" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'online-payments'}) }}">Online payments</a> – February 2012</li>
+            <li><a title="printed.com: Rebranding" href="{{ route('portfolio.projectPage', {'company': 'printed-com', 'project': 'rebranding'}) }}">Rebranding digitalprintpartnership.com as printed.com</a> – October 2011</li>
+        </ul>
+        {#
+        <h2>(More) City A.M.</h2>
+        <li>Native content - August 2014</li>
+        <li>CDN - September 2014</li>
+        <li>Intranet - October 2014</li>
+        <li>Tagging phase 1: Topic pages - December 2014</li>
+        <li>Adobe Analytics - February 2015</li>
+        <li>Tagging phase 2: Company pages - February 2015</li>
+        <li>Email builder - August 2015?</li>
+        <li>City Talk - August 2016</li>
+        <li>Migrating to Moosend - June 2016</li>
+        <li>Migrating from Drupal to Laravel - completed November 2016</li>
+        <h2>(More) printed.com</h2>
+        <li>Original site launch - October 2010</li>
+        <li>Large Format - March 2011</li>
+        <li>Christmas Cards - September 2011</li>
+        <li>New My Account section - March 2012</li>
+        <li>Reward Programme - August 2012</li>
+        <li>Initial launch of the template editor - May 2013</li>
+        At printed.com there were lots of other projects, such as supporting new product launches that needed
+        changes elsewhere in the system, creating numerous reports, storing cost prices alongside retail prices to
+        provide profitability stats, integration with third-party analytics platforms, and many, many more.
+        <h2>King Street Computers</h2>
+        <ul>
+            <li>kingstreetcomputers.com - November 2006</li>
+            <li>Customer Maintenance - December 2006</li>
+            <li>Windows Ticket Printing - June 2007</li>
+            <li>Backup - August 2007</li>
+            <li>Membership - November 2007</li>
+            <li>Online invoicing - March 2008</li>
+            <li>Customer Control Panel - May 2008</li>
+        </ul>
+        <h2>Standard Life Healthcare</h2>
+        <ul>
+            <li>Testing processes - 2004-2006</li>
+            <li>slhmove.com - 2005-2006</li>
+            <li>The Line (intranet) - 2000-2006</li>
+            <li>DOC1 4.3 upgrade - 2005-2006</li>
+        </ul>
+        <h2>Personal projects</h2>
+        <ul>
+            <li>CMF Ads</li>
+            <li>Injader</li>
+        </ul>
+        #}
+
+
+    </div>
+</div>
+
+{% endblock page_body %}
