@@ -1,0 +1,13 @@
+<script type="text/javascript">
+
+    var bbMusicTracklist = [];
+
+    {% for item in PlaylistItems %}
+bbMusicTracklist.push({
+        title: "{{ item.track.title }}",
+        mp3: encodeURI('{{ item.track.mediaFolder.path }}{{ item.track.media_file }}'),
+        duration: "{{ item.track.duration }}"
+    });
+    {% endfor %}
+
+</script>

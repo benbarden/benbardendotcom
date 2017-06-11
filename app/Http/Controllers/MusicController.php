@@ -61,6 +61,8 @@ class MusicController extends BaseController
         $albumCover = '';
         $jsLibVersion = '1';
         $additionalInfo = 'N';
+        $albumPlaylist = null;
+        $playlistTag = '';
 
         $bindings = array();
 
@@ -93,6 +95,7 @@ class MusicController extends BaseController
                 break;
             case 'ten':
                 $albumCover = 'ten-cover-temporary.jpg';
+                $playlistTag = 'ALBUM_10_TEN';
                 break;
             case 'the-unravelling-of-travelling':
                 $albumCover = 'the-unravelling-of-travelling-250px.jpg';
@@ -110,6 +113,12 @@ class MusicController extends BaseController
                 break;
         }
 
+        if ($playlistTag) {
+            $albumPlaylist = \App\MusicPlaylist::with('playlistItems')
+                ->where('tag', $playlistTag)
+                ->first();
+        }
+
         $albumTitle = $this->getAlbumTitle($albumId);
 
         $bindings['TopTitle'] = $albumTitle.' - Music';
@@ -118,7 +127,8 @@ class MusicController extends BaseController
             'TemplatePath' => sprintf('music/album/%s/', $albumId),
             'CoverImage' => '/img/music/'.$albumCover,
             'JsLibraryFile' => sprintf('/js/albums/%s.js?v=%s', $albumId, $jsLibVersion),
-            'AdditionalInfo' => $additionalInfo
+            'AdditionalInfo' => $additionalInfo,
+            'Playlist' => $albumPlaylist
         );
 
         return view('music.album.landing', $bindings);
@@ -126,52 +136,18 @@ class MusicController extends BaseController
 
     public function track($albumId, $trackId)
     {
-        $trackPages = array(
-            'revisited' => array(
-                '01-the-cliffs',
-                '02-journey-to-atlantis',
-                '03-the-sword',
-                '04-somewhere-there',
-                '05-subterranean-labyrinth',
-                '06-the-music-box',
-                '07-green-fields',
-                '08-descendance',
-                '09-eternal-evolution',
-                '10-aries',
-                '11-the-island',
-                '12-sailing-under-clouds',
-                '13-stormy-shores',
-                '14-clear-blue-skies',
-                '15-morning-exploring',
-                '16-rainforest',
-                '17-candlelit-cavern',
-                '18-no-way-out',
-                '19-into-darkness',
-                '20-twisted-vision'
-            )
-        );
-
-        if (array_key_exists($albumId, $trackPages)) {
-            if (in_array($trackId, $trackPages[$albumId])) {
-                $trackTemplate = sprintf('music/album/%s/track/%s', $albumId, $trackId);
-            } else {
-                abort(404);
-            }
-        } else {
-            abort(404);
-        }
-
-        try {
-            $albumTitle = $this->getAlbumTitle($albumId);
-        } catch (\Exception $e) {
-            abort(404);
-        }
-
         $bindings = array();
 
-        $bindings['TopTitle'] = $albumTitle.' - Music';
+        $trackInfoUrl = sprintf('/music/%s/track/%s', $albumId, $trackId);
+
+        $track = \App\MusicTrack::where('info_url', $trackInfoUrl)->first();
+        if (!$track) {
+            abort(404);
+        }
+
+        $bindings['TopTitle'] = $track->title.' - Music';
         $bindings['Track'] = array(
-            'TemplateFile' => $trackTemplate
+            'TemplateFile' => sprintf('music/album/%s/track/%s', $albumId, $trackId)
         );
 
         return view('music.album.track', $bindings);

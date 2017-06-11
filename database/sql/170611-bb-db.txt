@@ -1,0 +1,455 @@
+CREATE TABLE `music_media_folders` (
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `tag` VARCHAR(50) NOT NULL,
+  `path` TEXT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `tag` (`tag` ASC));
+
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_01_AWB', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_02_BP', 'http://coda.city/downloads/ben-barden-music/besidewalk-plight/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_01A_HITB', 'http://coda.city/downloads/ben-barden-music/hidden-in-the-beyond/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_03_TM', 'http://coda.city/downloads/ben-barden-music/twice-midnight/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_04_TUOT', 'http://coda.city/downloads/ben-barden-music/the-unravelling-of-travelling/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_05_ACOS', 'http://coda.city/downloads/ben-barden-music/a-change-of-scenery/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_06_S1', 'http://coda.city/downloads/ben-barden-music/symmetry-1/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_07_S2', 'http://coda.city/downloads/ben-barden-music/symmetry-2/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_08_REV', 'http://coda.city/downloads/ben-barden-music/revisited/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_09_VIS', 'http://coda.city/downloads/ben-barden-music/voyage-into-space/');
+INSERT INTO `music_media_folders` (`tag`, `path`) VALUES ('ALBUM_10_TEN', 'http://coda.city/downloads/ben-barden-music/ten/');
+
+CREATE TABLE `music_tracks` (
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(100) NOT NULL,
+  `duration` VARCHAR(8) NOT NULL,
+  `media_url` TEXT NULL,
+  `info_url` TEXT NULL,
+  PRIMARY KEY (`id`));
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('The Cliffs', '3:14', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/01. The Cliffs.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Ocean Dive', '5:53', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/02. Ocean Dive.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('The Sword', '4:23', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/03. The Sword.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('As Long As It Takes', '2:04', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/04. As Long As It Takes.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Descend into Dreamland', '2:18', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/05. Descend into Dreamland.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('World of Peace', '4:44', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/06. World of Peace.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Meadow', '3:09', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/07. Meadow.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Somewhere There', '2:50', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/08. Somewhere There.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('White Butterflies', '2:34', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/09. White Butterflies.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Subterranean Labyrinth', '3:19', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/10. Subterranean Labyrinth.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Blue Jade', '4:06', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/11. Blue Jade.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Aries (Parts 1 and 2)', '8:53', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/12. Aries (Parts 1 and 2).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Aries (Part 3)', '1:45', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/13. Aries Part 3.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Aries (Parts 4 and 5)', '3:21', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/14. Aries (Parts 4 and 5).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Raindrops', '1:27', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/15. Raindrops.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('A World Beyond', '3:38', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/16. A World Beyond.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_url`) VALUES ('Circular Finale', '7:04', 'http://coda.city/downloads/ben-barden-music/a-world-beyond/17. Circular Finale.mp3');
+
+ALTER TABLE `music_tracks`
+ADD COLUMN `media_folder_id` INT(10) UNSIGNED NULL AFTER `duration`;
+
+UPDATE music_tracks SET media_folder_id = 1;
+
+UPDATE music_tracks SET media_url = substring(media_url, 60);
+
+ALTER TABLE `music_tracks`
+CHANGE COLUMN `media_url` `media_file` VARCHAR(50) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL ;
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Gravity', '3:05', '2', '01. Gravity.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Nebular Dreams', '3:54', '2', '02. Nebular Dreams.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Jumpstart', '2:19', '2', '03. Jumpstart.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Besidewalk Plight', '3:02', '2', '04. Besidewalk Plight.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Shine Light', '3:37', '2', '05. Shine Light.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Silhouette', '2:49', '2', '06. Silhouette.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Pyramid', '3:25', '2', '07. Pyramid.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Our Memories', '4:08', '2', '08. Our Memories.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Path of No Return', '2:09', '2', '09. The Path of No Return.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Twisted Vision', '3:43', '2', '10. Twisted Vision.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Turning Tide', '3:20', '2', '11. The Turning Tide.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Wilderness', '2:45', '2', '12. The Wilderness.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Last Ones (Phase 1)', '3:22', '2', '13. The Last Ones - Phase 1.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Last Ones (Phase 2)', '5:32', '2', '14. The Last Ones - Phase 2.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Last Ones (Phase 3)', '3:14', '2', '15. The Last Ones - Phase 3.mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Dancing on the Cliffs', '3:02', '3', '01. Dancing on the Cliffs.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('At the Bottom of the Sea', '5:55', '3', '02. At the Bottom of the Sea.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Silversword', '4:50', '3', '03. Silversword.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Green Fields', '2:41', '3', '04. Green Fields.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Return to the Dreamland', '2:33', '3', '05. Return to the Dreamland.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Lost in the Beyond', '5:49', '3', '06. Lost in the Beyond.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Three Sides', '4:42', '3', '07. Three Sides.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('December Loneliness', '3:36', '3', '08. December Loneliness.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Blue Butterfly', '2:35', '3', '09. The Blue Butterfly.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Underground Maze', '3:20', '3', '10. Underground Maze.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Message for a Child', '4:24', '3', '11. Message for a Child.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Hidden in the Beyond', '6:12', '3', '12. Hidden in the Beyond.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Nine Intertwined', '18:34', '3', '13. Nine Intertwined.mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Midnight 1', '1:12', '4', '01. Midnight 1.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Waiting for the Sun', '3:52', '4', '02. Waiting for the Sun.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Opposites Attract', '2:55', '4', '03. Opposites Attract.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Voyage', '2:16', '4', '04. The Voyage.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Twilight Tide', '3:57', '4', '05. Twilight Tide.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Prosperity', '3:04', '4', '06. Prosperity.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Moon Eclipse', '6:10', '4', '07. Moon Eclipse.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Woodland Clearing', '4:40', '4', '08. Woodland Clearing.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Between the Trees', '4:21', '4', '09. Between the Trees.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Radial Circumference', '3:08', '4', '10. Radial Circumference.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Forever Field', '4:31', '4', '11. Forever Field.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('To the ends of the earth', '4:41', '4', '12. To the ends of the earth.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Melting Candles', '2:35', '4', '13. Melting Candles.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Solar Eclipse', '5:25', '4', '14. Solar Eclipse.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The End of Existence', '4:38', '4', '15. The End of Existence.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Midnight 2', '9:25', '4', '16. Midnight 2.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Gravity (Ben\'s Low Gravity Remix)', '2:57', '4', '17. Gravity (Ben\'s Low Gravity Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Circumference', '3:08', '4', '18. Circumference.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Night Lights', '0:54', '4', '19. Night Lights.mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Sitting on the corner of the sky', '2:50', '5', '01. Sitting on the corner of the sky.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Forbidden Planet', '3:35', '5', '02. Forbidden Planet.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('A Village of Silver', '2:27', '5', '03. A Village of Silver.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Ghostly Presence', '3:13', '5', '04. Ghostly Presence.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Caught between two dreams', '2:24', '5', '05. Caught between two dreams.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Step Outside', '3:23', '5', '06. Step Outside.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Reminiscence', '2:30', '5', '07. Reminiscence.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Long Cold Night', '3:59', '5', '08. The Long Cold Night.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Take Me Downstairs', '3:25', '5', '09. Take Me Downstairs.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Justified Eloquence', '3:30', '5', '10. Justified Eloquence.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Precipitate', '3:24', '5', '11. Precipitate.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Lifeline', '2:51', '5', '12. Lifeline.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Distance and Proximity', '4:28', '5', '13. Distance and Proximity.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Measure an infinite distance', '2:24', '5', '14. Measure an infinite distance.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('When the world knows', '3:15', '5', '15. When the world knows.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Secret Passages', '4:14', '5', '16. Secret Passages.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Steel Works', '4:12', '5', '17. Steel Works.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('State of Indifference', '2:28', '5', '18. State of Indifference.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Deafening Silence', '2:44', '5', '19. Deafening Silence.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Twilight City Lights', '2:43', '5', '20. Twilight City Lights.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Travelling Unravelled', '8:32', '5', '21. Travelling Unravelled.mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Longing', '4:50', '6', '01. Longing.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Blanket of Snow', '2:31', '6', '02. Blanket of Snow.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Silent Shore', '2:10', '6', '03. Silent Shore.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Sunwatching', '1:08', '6', '04. Sunwatching.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Nebular Dreaming', '3:57', '6', '05. Nebular Dreaming.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Deviance', '3:04', '6', '06. Deviance.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Moonsurfing', '2:23', '6', '07. Moonsurfing.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Stepping Stones', '5:38', '6', '08. Stepping Stones.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Wilderness, Part 2', '2:46', '6', '09. The Wilderness, Part 2.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Invisible in the Shadows', '5:46', '6', '10. Invisible in the Shadows.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Pipes of the Hills', '3:27', '6', '11. Pipes of the Hills.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Listen for the mountains', '2:08', '6', '12. Listen for the mountains.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Spiral Staircase', '4:27', '6', '13. The Spiral Staircase.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Starlining', '5:12', '6', '14. Starlining.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Model Railway', '3:04', '6', '15. Model Railway.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Climbing the Peak', '3:59', '6', '16. Climbing the Peak.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Lifeline II', '2:58', '6', '17. Lifeline II.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Fallen Leaves', '3:14', '6', '18. Fallen Leaves.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Forgotten Past', '2:46', '6', '19. Forgotten Past.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Sounds of Time', '5:28', '6', '20. The Sounds of Time.mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Overture', '3:30', '7', '01. Overture.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Circumference (GFD remix)', '4:11', '7', '02. Circumference (GFD remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('November Dawn', '4:02', '7', '03. November Dawn.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Late Summer Funk', '5:53', '7', '04. Late Summer Funk.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('First Tide', '4:42', '7', '05. First Tide.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Measure an infinite distance (GFD remix)', '4:04', '7', '06. Measure an infinite distance (GFD remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Turn It Up', '4:53', '7', '07. Turn It Up.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Dry Ice', '3:43', '7', '08. Dry Ice.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Crystallized', '3:58', '7', '09. Crystallized.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Take Me Downstairs (GFD remix)', '3:25', '7', '10. Take Me Downstairs (GFD remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Epic Journey', '6:11', '7', '11. Epic Journey.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Chronicles', '4:25', '8', '01. Chronicles.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Low Gravity (GFD remix)', '3:59', '8', '02. Low Gravity (GFD remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Legacy Layers', '4:50', '8', '03. Legacy Layers.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Classic Case of Chaos', '4:24', '8', '04. Classic Case of Chaos.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Second Tide', '2:48', '8', '05. Second Tide.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Subterranean Labyrinth (GFD remix)', '3:31', '8', '06. Subterranean Labyrinth (GFD remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Fireflies', '4:52', '8', '07. Fireflies.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Dark Room', '7:27', '8', '08. The Dark Room.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('True Destiny', '5:56', '8', '09. True Destiny.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Aries Part 3 (GFD remix)', '6:13', '8', '10. Aries Part 3 (GFD remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('See you on the other side', '5:11', '8', '11. See you on the other side.mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Cliffs (Revisited Remix)', '3:14', '9', '01. The Cliffs (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Journey to Atlantis (Revisited Remix)', '6:43', '9', '02. Journey to Atlantis (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Sword (Revisited Remix)', '4:26', '9', '03. The Sword (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Somewhere There (Revisited Remix)', '3:39', '9', '04. Somewhere There (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Subterranean Labyrinth (Revisited Remix)', '3:34', '9', '05. Subterranean Labyrinth (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Music Box (Revisited Remix)', '2:47', '9', '06. The Music Box (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Green Fields (Revisited Remix)', '2:42', '9', '07. Green Fields (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Descendance (Revisited Remix)', '2:54', '9', '08. Descendance (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Eternal Evolution (Revisited Remix)', '3:12', '9', '09. Eternal Evolution (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Aries (Revisited Remix)', '6:43', '9', '10. Aries (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('The Island (Revisited Remix)', '3:09', '9', '11. The Island (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Sailing Under Clouds (Revisited Remix)', '3:24', '9', '12. Sailing Under Clouds (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Stormy Shores (Revisited Remix)', '3:34', '9', '13. Stormy Shores (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Clear Blue Skies (Revisited Remix)', '4:39', '9', '14. Clear Blue Skies (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Morning Exploring (Revisited Remix)', '2:26', '9', '15. Morning Exploring (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Rainforest (Revisited Remix)', '3:31', '9', '16. Rainforest (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Candlelit Cavern (Revisited Remix)', '3:27', '9', '17. Candlelit Cavern (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('No Way Out (Revisited Remix)', '2:38', '9', '18. No Way Out (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Into Darkness (Revisited Remix)', '4:59', '9', '19. Into Darkness (Revisited Remix).mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Twisted Vision (Revisited Remix)', '3:44', '9', '20. Twisted Vision (Revisited Remix).mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Rocket Fuel', '5:10', '10', '01. Rocket Fuel.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Leaving the Planet', '4:39', '10', '02. Leaving the Planet.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Industrial Evolution', '4:25', '10', '03. Industrial Evolution.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Crystal Beach', '3:57', '10', '04. Crystal Beach.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Comet Chasing', '4:52', '10', '05. Comet Chasing.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Lost in Space', '4:34', '10', '06. Lost in Space.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Meteor Shower', '5:25', '10', '07. Meteor Shower.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Uncharted Territories', '5:47', '10', '08. Uncharted Territories.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Ninth Dimension', '7:01', '10', '09. Ninth Dimension.mp3');
+
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('A Morning in February', '4:02', '11', '01. Ben Barden - A Morning in February.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Lost in a Dream', '3:50', '11', '02. Ben Barden - Lost in a Dream.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Saturday Groove', '3:39', '11', '03. Ben Barden - Saturday Groove.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Eastern Echoes', '3:51', '11', '04. Ben Barden - Eastern Echoes.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Watching the Stars Go By', '4:24', '11', '05. Ben Barden - Watching the Stars Go By.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('A Figure in the Darkness', '4:09', '11', '06. Ben Barden - A Figure in the Darkness.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Seventh Road', '2:37', '11', '07. Ben Barden - Seventh Road.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Retro Disco', '3:14', '11', '08. Ben Barden - Retro Disco.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Rainbows', '3:28', '11', '09. Ben Barden - Rainbows.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Times Ten', '3:21', '11', '10. Ben Barden - Times Ten.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Synthetic Dreams', '3:54', '11', '11. Ben Barden - Synthetic Dreams.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Distant Voices', '3:26', '11', '12. Ben Barden - Distant Voices.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Climate Control', '4:11', '11', '13. Ben Barden - Climate Control.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Passage of Time', '4:15', '11', '14. Ben Barden - Passage of Time.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Get Ready', '3:48', '11', '15. Ben Barden - Get Ready.mp3');
+INSERT INTO `music_tracks` (`title`, `duration`, `media_folder_id`, `media_file`) VALUES ('Departure', '5:08', '11', '16. Ben Barden - Departure.mp3');
+
+CREATE TABLE `music_playlists` (
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `tag` VARCHAR(50) NOT NULL,
+  `title` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `tag` (`tag` ASC));
+
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_01_AWB', 'Album 1: A World Beyond');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_02_BP', 'Album 2: Besidewalk Plight');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_01A_HITB', 'Album 1A: Hidden in the Beyond');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_03_TM', 'Album 3: Twice Midnight');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_04_TUOT', 'Album 4: The Unravelling of Travelling');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_05_ACOS', 'Album 5: A Change of Scenery');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_06_S1', 'Album 6: Symmetry 1');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_07_S2', 'Album 7: Symmetry 2');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_08_REV', 'Album 8: Revisited');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_09_VIS', 'Album 9: Voyage into Space');
+INSERT INTO `music_playlists` (`tag`, `title`) VALUES ('ALBUM_10_TEN', 'Album 10: Ten');
+
+CREATE TABLE `music_playlist_items` (
+  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `playlist_id` INT(10) UNSIGNED NOT NULL,
+  `track_id` INT(10) UNSIGNED NOT NULL,
+  `playlist_order` TINYINT(2) UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `playlist_id` (`playlist_id` ASC),
+  INDEX `track_id` (`track_id` ASC));
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '1', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '2', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '3', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '4', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '5', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '6', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '7', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '8', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '9', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '10', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '11', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '12', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '13', '13');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '14', '14');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '15', '15');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '16', '16');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('1', '17', '17');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '18', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '19', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '20', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '21', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '22', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '23', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '24', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '25', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '26', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '27', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '28', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '29', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '30', '13');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '31', '14');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('2', '32', '15');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '33', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '34', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '35', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '36', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '37', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '38', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '39', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '40', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '41', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '42', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '43', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '44', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('3', '45', '13');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '46', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '47', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '48', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '49', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '50', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '51', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '52', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '53', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '54', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '55', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '56', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '57', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '58', '13');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '59', '14');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '60', '15');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '61', '16');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '62', '17');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '63', '18');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('4', '64', '19');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '65', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '66', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '67', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '68', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '69', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '70', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '71', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '72', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '73', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '74', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '75', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '76', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '77', '13');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '78', '14');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '79', '15');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '80', '16');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '81', '17');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '82', '18');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '83', '19');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '84', '20');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('5', '85', '21');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '86', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '87', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '88', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '89', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '90', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '91', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '92', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '93', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '94', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '95', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '96', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '97', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '98', '13');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '99', '14');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '100', '15');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '101', '16');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '102', '17');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '103', '18');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '104', '19');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('6', '105', '20');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '106', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '107', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '108', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '109', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '110', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '111', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '112', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '113', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '114', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '115', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('7', '116', '11');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '117', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '118', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '119', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '120', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '121', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '122', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '123', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '124', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '125', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '126', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('8', '127', '11');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '128', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '129', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '130', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '131', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '132', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '133', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '134', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '135', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '136', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '137', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '138', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '139', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '140', '13');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '141', '14');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '142', '15');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '143', '16');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '144', '17');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '145', '18');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '146', '19');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('9', '147', '20');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '148', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '149', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '150', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '151', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '152', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '153', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '154', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '155', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('10', '156', '9');
+
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '157', '1');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '158', '2');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '159', '3');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '160', '4');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '161', '5');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '162', '6');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '163', '7');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '164', '8');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '165', '9');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '166', '10');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '167', '11');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '168', '12');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '169', '13');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '170', '14');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '171', '15');
+INSERT INTO `music_playlist_items` (`playlist_id`, `track_id`, `playlist_order`) VALUES ('11', '172', '16');
+
+ALTER TABLE `music_tracks`
+CHANGE COLUMN `info_url` `info_url` VARCHAR(100) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci' NULL DEFAULT NULL ,
+ADD INDEX `info_url` (`info_url` ASC);
+
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/01-the-cliffs' WHERE `id`='128';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/02-journey-to-atlantis' WHERE `id`='129';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/03-the-sword' WHERE `id`='130';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/04-somewhere-there' WHERE `id`='131';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/05-subterranean-labyrinth' WHERE `id`='132';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/06-the-music-box' WHERE `id`='133';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/07-green-fields' WHERE `id`='134';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/08-descendance' WHERE `id`='135';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/09-eternal-evolution' WHERE `id`='136';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/10-aries' WHERE `id`='137';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/11-the-island' WHERE `id`='138';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/12-sailing-under-clouds' WHERE `id`='139';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/13-stormy-shores' WHERE `id`='140';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/14-clear-blue-skies' WHERE `id`='141';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/15-morning-exploring' WHERE `id`='142';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/16-rainforest' WHERE `id`='143';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/17-candlelit-cavern' WHERE `id`='144';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/18-no-way-out' WHERE `id`='145';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/19-into-darkness' WHERE `id`='146';
+UPDATE `music_tracks` SET `info_url`='/music/revisited/track/20-twisted-vision' WHERE `id`='147';
+
