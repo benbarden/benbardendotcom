@@ -70,28 +70,34 @@ class MusicController extends BaseController
             case 'a-change-of-scenery':
                 $albumCover = 'a-change-of-scenery-250px.jpg';
                 $additionalInfo = 'Y';
-                $jsLibVersion = '2';
+                $playlistTag = 'ALBUM_05_ACOS';
                 break;
             case 'a-world-beyond':
                 $albumCover = 'a-world-beyond-250px.jpg';
                 $additionalInfo = 'Y';
+                $playlistTag = 'ALBUM_01_AWB';
                 break;
             case 'besidewalk-plight':
                 $albumCover = 'besidewalk-plight-250px.jpg';
                 $additionalInfo = 'Y';
+                $playlistTag = 'ALBUM_02_BP';
                 break;
             case 'hidden-in-the-beyond':
                 $albumCover = 'hidden-in-the-beyond-250px.jpg';
                 $additionalInfo = 'Y';
+                $playlistTag = 'ALBUM_01A_HITB';
                 break;
             case 'revisited':
                 $albumCover = 'revisited-250px.jpg';
+                $playlistTag = 'ALBUM_08_REV';
                 break;
             case 'symmetry-1':
                 $albumCover = 'symmetry-1-cover-250px.png';
+                $playlistTag = 'ALBUM_06_S1';
                 break;
             case 'symmetry-2':
                 $albumCover = 'symmetry-2-cover-250px.png';
+                $playlistTag = 'ALBUM_07_S2';
                 break;
             case 'ten':
                 $albumCover = 'ten-cover-temporary.jpg';
@@ -100,13 +106,16 @@ class MusicController extends BaseController
             case 'the-unravelling-of-travelling':
                 $albumCover = 'the-unravelling-of-travelling-250px.jpg';
                 $additionalInfo = 'Y';
+                $playlistTag = 'ALBUM_04_TUOT';
                 break;
             case 'twice-midnight':
                 $albumCover = 'twice-midnight-250px.jpg';
                 $additionalInfo = 'Y';
+                $playlistTag = 'ALBUM_03_TM';
                 break;
             case 'voyage-into-space':
                 $albumCover = 'voyage-into-space-cover-500px.jpg';
+                $playlistTag = 'ALBUM_09_VIS';
                 break;
             default:
                 abort(404);
@@ -126,7 +135,6 @@ class MusicController extends BaseController
             'Title' => $albumTitle,
             'TemplatePath' => sprintf('music/album/%s/', $albumId),
             'CoverImage' => '/img/music/'.$albumCover,
-            'JsLibraryFile' => sprintf('/js/albums/%s.js?v=%s', $albumId, $jsLibVersion),
             'AdditionalInfo' => $additionalInfo,
             'Playlist' => $albumPlaylist
         );

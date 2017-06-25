@@ -36,8 +36,6 @@
 {% block footer_scripts %}
     {% if Album.Playlist %}
         {% include 'music/album/dynamic-playlist.twig' with {'PlaylistItems': Album.Playlist.playlistItems} %}
-    {% else %}
-        <script src="{{ Album.JsLibraryFile }}"></script>
     {% endif %}
     {% include 'music/player/base.twig' %}
 {% endblock footer_scripts %}

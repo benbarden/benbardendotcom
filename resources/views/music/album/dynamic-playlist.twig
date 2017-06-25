@@ -7,6 +7,9 @@ bbMusicTracklist.push({
         title: "{{ item.track.title }}",
         mp3: encodeURI('{{ item.track.mediaFolder.path }}{{ item.track.media_file }}'),
         duration: "{{ item.track.duration }}"
+        {% if item.track.info_url %}
+        , infoUrl: "{{ item.track.info_url }}"
+        {% endif %}
     });
     {% endfor %}
 
