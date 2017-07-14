@@ -5,6 +5,17 @@
     <meta name="viewport" content="initial-scale=1">
 </head>
 <body>
+{% if env == 'prod' %}
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NVHMQS"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NVHMQS');</script>
+    <!-- End Google Tag Manager -->
+{% endif %}
 <nav>
     <span>Ben Barden</span>
     <span><a href="{{ route('welcome') }}">Home</a></span>
@@ -22,17 +33,6 @@
         Social icons by <a href="https://www.iconfinder.com/iconsets/social-media-2034" target="_blank">Iconfinder.com</a>.
     </p>
 </div>
-{% if env == 'prod' %}
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NVHMQS"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NVHMQS');</script>
-<!-- End Google Tag Manager -->
-{% endif %}
 
 <script src="/js/jquery-1.11.3.min.js"></script>
 
