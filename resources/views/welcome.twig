@@ -2,61 +2,78 @@
 
 {% block page_body %}
 
-<h1>Welcome</h1>
-
-<div class="group">
-    <div class="homepage-box">
-        <div class="hp-banner-image">
-            <img src="/img/homepage/logic-pro-x-crystal-beach.png" alt="Logic Pro X - Crystal Beach by Ben Barden">
-        </div>
-        <div class="hp-body-text">
-            <h2>Music</h2>
-            <ul>
-                <li><a href="{{ route('music.album', {'albumId': 'ten'}) }}">Ten</a></li>
-                <li><a href="{{ route('music.album', {'albumId': 'voyage-into-space'}) }}">Voyage into Space</a></li>
-                <li><a href="{{ route('music.album', {'albumId': 'revisited'}) }}">Revisited</a></li>
-                <li><a href="{{ route('music.landing') }}">View all albums</a>...</li>
-            </ul>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>Welcome</h1>
         </div>
     </div>
-    <div class="homepage-box">
-        <div class="hp-banner-image-bg hp-bg-revisited">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="hp-banner-image">
+                <img src="/img/homepage/logic-pro-x-crystal-beach.png" alt="Logic Pro X - Crystal Beach by Ben Barden">
+            </div>
+            <div class="hp-body-text">
+                <h2>Music</h2>
+                <ul>
+                    <li><a href="{{ route('music.album', {'albumId': 'ten'}) }}">Ten</a></li>
+                    <li><a href="{{ route('music.album', {'albumId': 'voyage-into-space'}) }}">Voyage into Space</a></li>
+                    <li><a href="{{ route('music.album', {'albumId': 'revisited'}) }}">Revisited</a></li>
+                    <li><a href="{{ route('music.landing') }}">View all albums</a>...</li>
+                </ul>
+            </div>
         </div>
-        <div class="hp-body-text">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="http://www.worldofswitch.com" target="_blank">World of Switch</a></li>
-                <li><a href="http://www.bloggeries.com" target="_blank">Bloggeries</a></li>
-                <li><a href="https://benbarden.wordpress.com" target="_blank">My blog</a></li>
-                <li><a href="{{ route('portfolio.landing') }}">Portfolio</a></li>
-            </ul>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="hp-banner-image">
+                <img src="/img/homepage/revisited-flowers.jpg" alt="Revisited by Ben Barden">
+            </div>
+            <div class="hp-body-text">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="http://www.worldofswitch.com" target="_blank">World of Switch</a></li>
+                    <li><a href="http://www.bloggeries.com" target="_blank">Bloggeries</a></li>
+                    <li><a href="https://benbarden.wordpress.com" target="_blank">My blog</a></li>
+                    <li><a href="{{ route('portfolio.landing') }}">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="hp-banner-image">
+                <img src="/img/IMG_1735_ext_cc_web.jpg" alt="Ben Barden">
+            </div>
+            <div class="hp-body-text">
+                <h2>About</h2>
+                <p>
+                    I've worked in tech for nearly 20 years.
+                    Currently working for Kobalt Music as Web Team Lead.
+                    <a href="{{ route('single.about') }}">Read more</a>...
+                </p>
+                <p>
+                    Follow me:
+                    <a href="https://twitter.com/benbarden" target="_blank">
+                        <img src="/img/social/twitter.png" alt="Twitter" title="Twitter" class="hp-social-icon"></a>
+                    <a href="https://benbarden.wordpress.com" target="_blank">
+                        <img src="/img/social/wordpress.png" alt="Blog" title="Blog" class="hp-social-icon"></a>
+                    <a href="https://www.linkedin.com/in/benbarden" target="_blank">
+                        <img src="/img/social/linkedin.png" alt="LinkedIn" title="LinkedIn" class="hp-social-icon"></a>
+                    <a href="https://soundcloud.com/benbarden" target="_blank">
+                        <img src="/img/social/soundcloud.png" alt="Soundcloud" title="Soundcloud" class="hp-social-icon"></a>
+                    <a href="https://instagram.com/benbarden/" target="_blank">
+                        <img src="/img/social/instagram.png" alt="Instagram" title="Instagram" class="hp-social-icon"></a>
+                    <a href="mailto:fromtheblog@benbarden.com" target="_blank">
+                        <img src="/img/social/telegram.png" alt="Email" title="Email" class="hp-social-icon"></a>
+                </p>
+            </div>
         </div>
     </div>
-    <div class="homepage-box">
-        <div class="hp-banner-image">
-            <img src="/img/IMG_1735_ext_cc_web.jpg" alt="Ben Barden">
-        </div>
-        <div class="hp-body-text">
-            <h2>About</h2>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p>
-                I've worked in tech for nearly 20 years.
-                Currently working for Kobalt Music as Web Team Lead.
-                <a href="{{ route('single.about') }}">Read more</a>...
-            </p>
-            <p>
-                Follow me:
-                <a href="https://twitter.com/benbarden" target="_blank">
-                    <img src="/img/social/twitter.png" alt="Twitter" title="Twitter" class="hp-social-icon"></a>
-                <a href="https://benbarden.wordpress.com" target="_blank">
-                    <img src="/img/social/wordpress.png" alt="Blog" title="Blog" class="hp-social-icon"></a>
-                <a href="https://www.linkedin.com/in/benbarden" target="_blank">
-                    <img src="/img/social/linkedin.png" alt="LinkedIn" title="LinkedIn" class="hp-social-icon"></a>
-                <a href="https://soundcloud.com/benbarden" target="_blank">
-                    <img src="/img/social/soundcloud.png" alt="Soundcloud" title="Soundcloud" class="hp-social-icon"></a>
-                <a href="https://instagram.com/benbarden/" target="_blank">
-                    <img src="/img/social/instagram.png" alt="Instagram" title="Instagram" class="hp-social-icon"></a>
-                <a href="mailto:fromtheblog@benbarden.com" target="_blank">
-                    <img src="/img/social/telegram.png" alt="Email" title="Email" class="hp-social-icon"></a>
+                <small>
+                    Copyright &copy; Ben Barden {{ 'now'|date('Y') }}.
+                    Social icons by
+                    <a href="https://www.iconfinder.com/iconsets/social-media-2034" target="_blank">Iconfinder.com</a>.
+                </small>
             </p>
         </div>
     </div>
