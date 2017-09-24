@@ -37,6 +37,9 @@ class MusicController extends BaseController
             case 'symmetry-2':
                 $albumTitle = 'Symmetry 2';
                 break;
+            case 'symmetry-best-of':
+                $albumTitle = 'Best of Symmetry';
+                break;
             case 'ten':
                 $albumTitle = 'Ten';
                 break;
@@ -98,6 +101,10 @@ class MusicController extends BaseController
             case 'symmetry-2':
                 $albumCover = 'symmetry-2-cover-250px.png';
                 $playlistTag = 'ALBUM_07_S2';
+                break;
+            case 'symmetry-best-of':
+                $albumCover = 'symmetry-playlist-800px.jpg';
+                $playlistTag = 'SYMMETRY_BEST_OF';
                 break;
             case 'ten':
                 $albumCover = 'ten-cover-temporary.jpg';
