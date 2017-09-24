@@ -58,6 +58,7 @@
                 for (i=0; i<bbMusicTracklist.length; i++) {
                     trackTitle = bbMusicTracklist[i]['title'];
                     trackTime = bbMusicTracklist[i]['duration'];
+                    trackYear = bbMusicTracklist[i]['yearReleased'];
                     trackMp3 = bbMusicTracklist[i]['mp3'];
                     trackMoreInfoUrl = bbMusicTracklist[i]['infoUrl'];
                     rowHtml  = '<tr>';
@@ -70,6 +71,11 @@
                     rowHtml += '<td>' + trackTitle + '</td>';
                     if (typeof trackTime !== 'undefined') {
                         rowHtml += '<td style="text-align: center;">' + trackTime + '</td>';
+                    } else {
+                        rowHtml += '<td style="text-align: center;"></td>';
+                    }
+                    if (typeof trackYear !== 'undefined') {
+                        rowHtml += '<td style="text-align: center;">' + trackYear + '</td>';
                     } else {
                         rowHtml += '<td style="text-align: center;"></td>';
                     }

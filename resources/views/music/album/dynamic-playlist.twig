@@ -10,6 +10,9 @@ bbMusicTracklist.push({
         {% if item.track.info_url %}
         , infoUrl: "{{ item.track.info_url }}"
         {% endif %}
+        {% if item.track.year_released %}
+        , yearReleased: "{{ item.track.year_released }}"
+        {% endif %}
     });
     {% endfor %}
 

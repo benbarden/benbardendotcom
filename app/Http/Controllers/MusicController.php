@@ -160,4 +160,14 @@ class MusicController extends BaseController
 
         return view('music.album.track', $bindings);
     }
+
+    public function allTracks()
+    {
+        $bindings = array();
+        $bindings['TopTitle'] = 'All tracks - Music';
+
+        $bindings['PlaylistItems'] = \App\MusicTrack::orderBy('title', 'asc')->get();
+
+        return view('music.allTracks', $bindings);
+    }
 }

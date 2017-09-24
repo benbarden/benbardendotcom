@@ -1,0 +1,51 @@
+{% extends 'theme/ben/base.twig' %}
+
+{% block page_body %}
+
+<div class="container" id="music-landing">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>All tracks</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+            {% include 'music/album/track-listing.twig' %}
+
+            <h2>Licensing</h2>
+            <p>All tracks are free to use for non-commercial purposes. Attribution required.</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+            <br />This work is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            {% include 'music/player/render.twig' %}
+        </div>
+    </div>
+</div>
+
+{% endblock page_body %}
+
+{% block footer_scripts %}
+    <script type="text/javascript">
+
+        var bbMusicTracklist = [];
+
+        {% for item in PlaylistItems %}
+        bbMusicTracklist.push({
+            title: "{{ item.title }}",
+            mp3: encodeURI('{{ item.mediaFolder.path }}{{ item.media_file }}'),
+            duration: "{{ item.duration }}"
+            {% if item.info_url %}
+            , infoUrl: "{{ item.info_url }}"
+            {% endif %}
+            {% if item.year_released %}
+            , yearReleased: "{{ item.year_released }}"
+            {% endif %}
+        });
+        {% endfor %}
+
+    </script>
+    {% include 'music/player/base.twig' %}
+{% endblock footer_scripts %}
