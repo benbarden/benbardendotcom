@@ -31,6 +31,9 @@ class MusicController extends BaseController
             case 'revisited':
                 $albumTitle = 'Revisited';
                 break;
+            case 'singularity':
+                $albumTitle = 'Singularity';
+                break;
             case 'symmetry-1':
                 $albumTitle = 'Symmetry 1';
                 break;
@@ -93,6 +96,10 @@ class MusicController extends BaseController
             case 'revisited':
                 $albumCover = 'revisited-250px.jpg';
                 $playlistTag = 'ALBUM_08_REV';
+                break;
+            case 'singularity':
+                $albumCover = 'singularity-cover-large.jpg';
+                $playlistTag = 'ALBUM_11_SINGULARITY';
                 break;
             case 'symmetry-1':
                 $albumCover = 'symmetry-1-cover-250px.png';
